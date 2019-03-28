@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "maizzle build",
+    "build staging": "maizzle build staging",
+    "build production": "maizzle build production",
+    "watch": "maizzle serve"
+  },
+  "dependencies": {
+    "@maizzle/framework": "^0.1.1",
+    "tailwindcss-gradients": "^1.1.0"
+  },
+  "browserslist": [
+    "> 1%"
+  ]
+}

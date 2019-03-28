@@ -1,0 +1,32 @@
+<!DOCTYPE {{ page.doctype or 'html' }}>
+<html {% if page.htmlClass %}class="{{ page.htmlClass }}"{% endif %} lang="{{ page.language or 'en' }}" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="{{ page.charset or 'utf8' }}">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="x-apple-disable-message-reformatting">
+  {% if page.title %}<title>{{ page.title }}</title>{% endif %}
+  {% if page.googleFonts %}<!--[if !mso]><!--><link href="https://fonts.googleapis.com/css?family={{ page.googleFonts }}" rel="stylesheet"><!--<![endif]-->{%- endif %}
+  <!--[if mso]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <style>
+    table {border-collapse: collapse;}
+    td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
+  </style>
+  <![endif]-->
+  {% if css %}<style>{{ css }}</style>{% endif %}
+  {% block head %}{% endblock %}
+</head>
+<body {% if page.bodyClass %}class="{{ page.bodyClass }}"{% endif %}>
+{% if page.preheader %}
+  <div class="hidden text-0 leading-0">{{ page.preheader }}</div>
+{% endif %}
+
+{% block template %}{% endblock %}
+</body>
+</html>
+

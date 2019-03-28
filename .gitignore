@@ -1,0 +1,8 @@
+/node_modules/
+/build_local/
+.DS_Store
+Thumbs.db
+/.idea/
+/.vscode/
+npm-debug.log
+yarn-error.log

@@ -1,0 +1,25 @@
+@screen all {
+  img {
+    @apply max-w-full;
+  }
+
+  td, th {
+    box-sizing: border-box;
+  }
+
+  u ~ div .wrapper {
+    @apply min-w-screen;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  @apply m-0 p-0 w-full;
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  border: 0;
+  @apply leading-full align-middle;
+}

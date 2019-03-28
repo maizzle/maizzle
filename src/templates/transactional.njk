@@ -1,0 +1,56 @@
+---
+title: Nice to have you on board, now please confirm your email address
+bodyClass: bg-gray-200 h-full
+htmlClass: bg-gray-200 h-full
+---
+
+{% block template %}
+
+<table class="wrapper w-full h-full all-font-sans">
+  <tr>
+    <td align="center" class="bg-gray-200 align-middle py-24">
+      <table class="w-600 sm-w-full">
+        <tr>
+          <td class="text-center pb-24 sm-pb-12">
+            <h1 class="font-semibold text-black text-2xl">Confirm your email</h1>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" class="sm-px-24">
+            <table class="w-3-4 sm-w-full">
+              <tr>
+                <td class="bg-white p-48 sm-px-24 text-center">
+                  <p class="text-lg font-semibold m-0">Hey, thanks for creating a Maizzle account!</p>
+                  <p class="text-gray-700 text-base">We'll need to verify your email address, so please click the big button below:</p>
+                  <div class="leading-24 sm-h-32">&zwnj;</div>
+                  <table align="center">
+                    <tr>
+                      <td align="center" class="bg-blue-500 hover-bg-blue-600 text-white rounded" style="mso-padding-alt: 8px 24px 16px;">
+                        <a href="https://example.com" class="text-white inline-block text-sm font-semibold py-16 px-24 no-underline">Confirm email address</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="h-2 bg-gray-300"></td>
+              </tr>
+              <tr>
+                <td class="text-center text-gray-600 text-xs p-32">
+                  <p class="m-0 mb-4 uppercase">Powered by Maizzle</p>
+                  <p class="m-0 italic">The framework for rapid email prototyping</p>
+                  <p class="cursor-default">
+                    {% include "src/partials/footer-links.njk" %}
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+{% endblock %}
+
