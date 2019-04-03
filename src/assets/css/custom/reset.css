@@ -1,3 +1,4 @@
+/*! purgecss start ignore */
 @screen all {
   img {
     @apply max-w-full;
@@ -23,3 +24,4 @@ img {
   border: 0;
   @apply leading-full align-middle;
 }
+/*! purgecss end ignore */
