@@ -1,7 +1,7 @@
 <!DOCTYPE {{ page.doctype or 'html' }}>
 <html ⚡4email {% if page.htmlClass %}class="{{ page.htmlClass }}"{% endif %} lang="{{ page.language or 'en' }}">
 <head>
-  <meta charset="{{ page.charset or 'utf8' }}">
+  <meta charset="{{ page.charset or 'utf-8' }}">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <style amp4email-boilerplate>body{visibility:hidden}</style>
   {% if page.title %}<title>{{ page.title }}</title>{% endif %}
