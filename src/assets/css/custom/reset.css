@@ -7,7 +7,9 @@
   td, th {
     box-sizing: border-box;
   }
+}
 
+@screen sm {
   u ~ div .wrapper {
     @apply min-w-screen;
   }
