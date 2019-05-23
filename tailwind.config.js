@@ -283,6 +283,19 @@ module.exports = {
       ...theme('spacing'),
       full: '100%',
     }),
+    linearGradients: theme => ({
+      colors: theme('colors'),
+      directions: {
+        't': 'to top',
+        'tr': 'to top right',
+        'r': 'to right',
+        'br': 'to bottom right',
+        'b': 'to bottom',
+        'bl': 'to bottom left',
+        'l': 'to left',
+        'tl': 'to top left',
+      },
+    }),
     listStyleType: {
       none: 'none',
       disc: 'disc',
@@ -369,6 +382,26 @@ module.exports = {
       '12': '12',
     },
     padding: theme => theme('spacing'),
+    radialGradients: theme => ({
+      colors: theme('colors'),
+      positions: {
+        'default': 'center',
+        't': 'top',
+        'tr': 'top right',
+        'r': 'right',
+        'br': 'bottom right',
+        'b': 'bottom',
+        'bl': 'bottom left',
+        'l': 'left',
+        'tl': 'top left',
+      },
+      shapes: {
+        default: 'ellipse',
+      },
+      sizes: {
+        default: 'closest-side',
+      },
+    }),
     stroke: {
       current: 'currentColor',
     },
@@ -435,6 +468,7 @@ module.exports = {
     justifyContent: ['responsive'],
     letterSpacing: ['responsive'],
     lineHeight: ['responsive'],
+    linearGradients: ['responsive'],
     listStylePosition: ['responsive'],
     listStyleType: ['responsive'],
     margin: ['responsive'],
@@ -451,6 +485,7 @@ module.exports = {
     padding: ['responsive'],
     pointerEvents: [],
     position: ['responsive'],
+    radialGradients: ['responsive'],
     resize: [],
     stroke: [],
     tableLayout: ['responsive'],
@@ -470,30 +505,6 @@ module.exports = {
     container: false
   },
   plugins: [
-    require('tailwindcss-gradients')({
-      variants: ['responsive'],
-      directions: {
-        't': 'to top',
-        'tr': 'to top right',
-        'r': 'to right',
-        'br': 'to bottom right',
-        'b': 'to bottom',
-        'bl': 'to bottom left',
-        'l': 'to left',
-        'tl': 'to top left',
-      },
-      gradients: {
-        'grey-dark': ['#b8c2cc', '#8795a1'],
-        'red-dark': ['#e3342f', '#cc1f1a'],
-        'orange-dark': ['#f6993f', '#de751f'],
-        'yellow-dark': ['#ffed4a', '#f2d024'],
-        'green-dark': ['#38c172', '#1f9d55'],
-        'teal-dark': ['#4dc0b5', '#38a89d'],
-        'blue-dark': ['#3490dc', '#2779bd'],
-        'indigo-dark': ['#6574cd', '#5661b3'],
-        'purple-dark': ['#9561e2', '#794acf'],
-        'pink-dark': ['#f66d9b', '#eb5286'],
-      }
-    }),
+    require('tailwindcss-gradients')(),
   ],
 }
