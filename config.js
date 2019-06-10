@@ -251,10 +251,11 @@ module.exports = {
   */
 
   browsersync: {
-    port: 3000,
-    tunnel: false,
     directory: true,
     notify: false,
+    open: false,
+    port: 3000,
+    tunnel: false,
     watch: [
       'src/layouts/**/*.*',
       'src/partials/**/*.*',
