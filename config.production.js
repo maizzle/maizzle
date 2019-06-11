@@ -12,7 +12,7 @@ module.exports = {
   cleanup: {
     removeUnusedCSS: {
       enabled: true,
-      uglifyClassNames: true,
+      uglify: true,
     },
     preferBgColorAttribute: true,
   },
