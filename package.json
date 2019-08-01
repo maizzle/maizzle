@@ -7,7 +7,7 @@
     "watch": "maizzle serve"
   },
   "dependencies": {
-    "@maizzle/framework": "^0.2.4",
+    "@maizzle/framework": "^0.3.0",
     "tailwindcss-gradients": "^2.3.0"
   },
   "browserslist": [
