@@ -264,6 +264,10 @@ module.exports = {
       extrabold: 800,
       black: 900,
     },
+    gradients: {
+      'black-transparent': ['#000', 'transparent'],
+      'white-transparent': ['#fff', 'transparent'],
+    },
     height: theme => ({
       auto: 'auto',
       ...theme('spacing'),
@@ -284,7 +288,7 @@ module.exports = {
       full: '100%',
     }),
     linearGradients: theme => ({
-      colors: theme('colors'),
+      colors: theme('gradients'),
       directions: {
         't': 'to top',
         'tr': 'to top right',
@@ -383,7 +387,7 @@ module.exports = {
     },
     padding: theme => theme('spacing'),
     radialGradients: theme => ({
-      colors: theme('colors'),
+      colors: theme('gradients'),
       positions: {
         'default': 'center',
         't': 'top',
