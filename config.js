@@ -155,7 +155,7 @@ module.exports = {
     /*
     |-----------------------------------------------------------------------------
     | Replace strings
-    | https://maizzle.com/docs/code-cleanup/#replace-strings
+    | https://maizzle.com/docs/code-cleanup/#replacestrings
     |-----------------------------------------------------------------------------
     |
     | Regular expressions [key] and the string to replace them with [value].
