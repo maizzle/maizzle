@@ -245,12 +245,12 @@ module.exports = {
   | Minify                                     https://maizzle.com/docs/minify/
   |-----------------------------------------------------------------------------
   |
-  | Configure html-minifier options. Use in production emails.
+  | Enable and configure minifier options. Enable for production builds.
   |
   */
 
   minify: {
-    removeEmptyAttributes: true,
+    enabled: false,
   },
 
   /*
