@@ -154,6 +154,18 @@ module.exports = {
 
     /*
     |-----------------------------------------------------------------------------
+    | Replace strings
+    | https://maizzle.com/docs/code-cleanup/#replace-strings
+    |-----------------------------------------------------------------------------
+    |
+    | Regular expressions [key] and the string to replace them with [value].
+    |
+    */
+
+    replaceStrings: false,
+
+    /*
+    |-----------------------------------------------------------------------------
     | Keep Only Attribute Sizes
     | https://maizzle.com/docs/code-cleanup/#keeponlyattributesizes
     |-----------------------------------------------------------------------------
@@ -168,18 +180,6 @@ module.exports = {
       width: ['TABLE', 'TD', 'TH', 'IMG', 'VIDEO'],
       height: ['TABLE', 'TD', 'TH', 'IMG', 'VIDEO'],
     },
-
-    /*
-    |-----------------------------------------------------------------------------
-    | Replace strings
-    | https://maizzle.com/docs/code-cleanup/#replace-strings
-    |-----------------------------------------------------------------------------
-    |
-    | Regular expressions [key] and the string to replace them with [value].
-    |
-    */
-
-    replaceStrings: false,
 
     /*
     |-----------------------------------------------------------------------------
