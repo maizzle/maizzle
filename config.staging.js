@@ -14,6 +14,9 @@ module.exports = {
       enabled: true,
       whitelist: ['.External*', '.ReadMsgBody', '.yshortcuts', '.Mso*', '#*'],
     },
+    replaceStrings: {
+      '\\s?style=""': '',
+    },
     preferBgColorAttribute: true,
   },
 

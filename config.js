@@ -171,6 +171,18 @@ module.exports = {
 
     /*
     |-----------------------------------------------------------------------------
+    | Replace strings
+    | https://maizzle.com/docs/code-cleanup/#replace-strings
+    |-----------------------------------------------------------------------------
+    |
+    | Regular expressions [key] and the string to replace them with [value].
+    |
+    */
+
+    replaceStrings: false,
+
+    /*
+    |-----------------------------------------------------------------------------
     | Prefer bgcolor Attribute
     | https://maizzle.com/docs/code-cleanup/#preferbgcolorattribute
     |-----------------------------------------------------------------------------

@@ -14,6 +14,9 @@ module.exports = {
       enabled: true,
       uglify: true,
     },
+    replaceStrings: {
+      '\\s?style=""': '',
+    },
     preferBgColorAttribute: true,
   },
 
