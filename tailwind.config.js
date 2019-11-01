@@ -127,8 +127,8 @@ module.exports = {
       },
     },
     spacing: {
-      '0': 0,
       px: '1px',
+      '0': 0,
       '2': '2px',
       '4': '4px',
       '8': '8px',
@@ -305,9 +305,10 @@ module.exports = {
       disc: 'disc',
       decimal: 'decimal',
     },
-    margin: theme => ({
+    margin: (theme, { negative }) => ({
       auto: 'auto',
       ...theme('spacing'),
+      ...negative(theme('spacing')),
       '1-2': '50%',
       '1-3': '33.33333%',
       '2-3': '66.66667%',
@@ -506,7 +507,8 @@ module.exports = {
     zIndex: ['responsive'],
   },
   corePlugins: {
-    container: false
+    accessibility: false,
+    container: false,
   },
   plugins: [
     require('tailwindcss-gradients')(),
