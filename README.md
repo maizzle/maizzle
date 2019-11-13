@@ -2,12 +2,13 @@
 <p align="center">HTML email development framework</p>
 <p align="center">
 <a href="https://npmjs.com/package/@maizzle/framework"><img src="https://img.shields.io/npm/v/@maizzle/framework.svg?style=flat-square" alt="Latest Release"></a>
-<a href="https://npmjs.com/package/@maizzle/framework"><img src="https://img.shields.io/github/license/maizzle/framework.svg?color=289159&style=flat-square" alt="License"></a>
+<a href="https://npmjs.com/package/@maizzle/framework"><img src="https://img.shields.io/npm/dt/@maizzle/framework?style=flat-square&color=289159" alt="Downloads"></a>
+<a href="https://github.com/maizzle/maizzle/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/maizzle/framework.svg?color=289159&style=flat-square" alt="License"></a>
 </p>
 
-## About Maizzle
+## About
 
-Maizzle is an email framework that helps you quickly build emails with utility-first CSS and advanced, email-specific post-processing. It's powered by [Tailwind CSS](https://tailwindcss.com/) and an email-tailored, custom Node.js build system that enables various transformations necessary for HTML emails.
+Maizzle is an email framework that helps you quickly build HTML emails with [Tailwind CSS](https://tailwindcss.com/).
 
 ## Documentation
 
