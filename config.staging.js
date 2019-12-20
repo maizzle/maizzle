@@ -12,7 +12,6 @@ module.exports = {
   cleanup: {
     removeUnusedCSS: {
       enabled: true,
-      whitelist: ['.External*', '.ReadMsgBody', '.yshortcuts', '.Mso*', '#*'],
     },
     replaceStrings: {
       '\\s(style|class)(=""|(?=>)|(?=\\s))+': '',
