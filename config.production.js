@@ -12,19 +12,13 @@ module.exports = {
   cleanup: {
     removeUnusedCSS: {
       enabled: true,
-      uglify: true,
     },
     replaceStrings: {
       '\\s(style|class)(=""|(?=>)|(?=\\s))+': '',
     },
-    preferBgColorAttribute: true,
   },
 
-  minify: {
+  prettify: {
     enabled: true,
-    minifyCSS: true,
-    maxLineLength: 500,
-    collapseWhitespace: true,
-    processConditionalComments: true,
   },
 }
