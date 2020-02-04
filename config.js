@@ -99,8 +99,8 @@ module.exports = {
       'vertical-align': 'valign',
     },
     applySizeAttribute: {
-      width: ['TABLE', 'TD', 'TH', 'IMG', 'VIDEO'],
-      height: ['TABLE', 'TD', 'TH', 'IMG', 'VIDEO'],
+      width: [],
+      height: [],
     },
     excludedProperties: null,
   },
@@ -174,11 +174,13 @@ module.exports = {
     | `width=""` and `height=""`. Elements in these arrays will have their
     | inline CSS widths and heights removed.
     |
+    | Example: width: ['TABLE', 'TD', 'TH', 'IMG', 'VIDEO'],
+    |
     */
 
     keepOnlyAttributeSizes: {
-      width: ['TABLE', 'TD', 'TH', 'IMG', 'VIDEO'],
-      height: ['TABLE', 'TD', 'TH', 'IMG', 'VIDEO'],
+      width: [],
+      height: [],
     },
 
     /*
