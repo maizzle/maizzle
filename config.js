@@ -29,7 +29,7 @@ module.exports = {
   | Doctype                                   https://maizzle.com/docs/doctype/
   |-----------------------------------------------------------------------------
   |
-  | Define a global doctype to be used in the master Layout.
+  | Define a global doctype.
   |
   */
 
@@ -40,7 +40,7 @@ module.exports = {
   | Language                                 https://maizzle.com/docs/language/
   |-----------------------------------------------------------------------------
   |
-  | Set a global `lang=""` attribute for the `<html>` tag in the master Layout.
+  | Set a global `lang` attribute for the `<html>` tag in the default Layout.
   |
   */
 
@@ -51,7 +51,7 @@ module.exports = {
   | Character set                             https://maizzle.com/docs/charset/
   |-----------------------------------------------------------------------------
   |
-  | Set a global character encoding. Also used in the master Layout.
+  | Set a global character encoding. Also used in the default Layout.
   |
   */
 
@@ -110,7 +110,7 @@ module.exports = {
   | Code Clean-up                        https://maizzle.com/docs/code-cleanup/
   |-----------------------------------------------------------------------------
   |
-  | Various options for cleaning up and optimizing your email's CSS and markup.
+  | Options for cleaning up and optimizing your email's CSS and markup.
   |
   */
 
@@ -232,7 +232,7 @@ module.exports = {
   | Prettify                                 https://maizzle.com/docs/prettify/
   |-----------------------------------------------------------------------------
   |
-  | Enable pretty printing your email code. Use if sending HTML to a human.
+  | Option to pretty print your email code. Use if sending HTML to a human.
   |
   */
 
@@ -247,7 +247,7 @@ module.exports = {
   | Minify                                     https://maizzle.com/docs/minify/
   |-----------------------------------------------------------------------------
   |
-  | Enable and configure minifier options. Enable for production builds.
+  | Enable and configure minifier options.
   |
   */
 
