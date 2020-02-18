@@ -15,10 +15,4 @@ img {
     @apply max-w-full;
   }
 }
-
-@screen sm {
-  u ~ div .wrapper {
-    @apply min-w-screen;
-  }
-}
 /*! purgecss end ignore */
