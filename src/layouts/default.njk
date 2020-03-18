@@ -23,11 +23,13 @@
   {% block head %}{% endblock %}
 </head>
 <body {% if page.bodyClass %}class="{{ page.bodyClass }}"{% endif %}>
-{% if page.preheader %}
-  <div class="hidden">{{ page.preheader }}</div>
-{% endif %}
+  {% if page.preheader %}
+    <div class="hidden">{{ page.preheader }}</div>
+  {% endif %}
 
-{% block template %}{% endblock %}
+  <div role="article" aria-roledescription="email" aria-label="{{ page.title or '' }}" lang="{{ page.language or 'en'}}">
+    {% block template %}{% endblock %}
+  </div>
 </body>
 </html>
 
