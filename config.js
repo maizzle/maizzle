@@ -1,6 +1,6 @@
 /*
 
-Maizzle - Email Development Framework
+Maizzle - HTML Email Development Framework
 
 Welcome to the Maizzle config file. This is where you can customize Maizzle
 for your project. Besides changing some values here and there, you can
@@ -26,47 +26,37 @@ module.exports = {
 
   /*
   |-----------------------------------------------------------------------------
-  | Doctype                                   https://maizzle.com/docs/doctype/
+  | Build Config                         https://maizzle.com/docs/build-config/
   |-----------------------------------------------------------------------------
   |
-  | Define a global doctype.
+  | Configure build related settings.
   |
   */
 
-  doctype: 'html',
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Language                                 https://maizzle.com/docs/language/
-  |-----------------------------------------------------------------------------
-  |
-  | Set a global `lang` attribute for the `<html>` tag in the default Layout.
-  |
-  */
-
-  language: 'en',
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Character set                             https://maizzle.com/docs/charset/
-  |-----------------------------------------------------------------------------
-  |
-  | Set a global character encoding. Also used in the default Layout.
-  |
-  */
-
-  charset: 'utf-8',
-
-  /*
-  |-----------------------------------------------------------------------------
-| Google Fonts                          https://maizzle.com/docs/google-fonts/
-  |-----------------------------------------------------------------------------
-  |
-  | This is where you can define which Google Fonts Maizzle should import.
-  |
-  */
-
-  googleFonts: '',
+  build: {
+    assets: {
+      source: 'src/assets/images',
+      destination: 'images',
+    },
+    browsersync: {
+      watch: [
+        'src/**/*.*',
+        'tailwind.config.js',
+      ],
+    },
+    destination: {
+      path: 'build_local',
+      extension: 'html',
+    },
+    tailwind: {
+      css: 'src/assets/css/main.css',
+      config: 'tailwind.config.js',
+    },
+    templates: {
+      root: 'src/templates',
+      extensions: 'html',
+    },
+  },
 
   /*
   |-----------------------------------------------------------------------------
@@ -79,6 +69,18 @@ module.exports = {
   */
 
   baseImageURL: '',
+
+  /*
+  |-----------------------------------------------------------------------------
+| Google Fonts                          https://maizzle.com/docs/google-fonts/
+  |-----------------------------------------------------------------------------
+  |
+  | This is where you can define which Google Fonts Maizzle should import.
+  | Remember, you still need to register the Tailwind utility.
+  |
+  */
+
+  googleFonts: '',
 
   /*
   |-----------------------------------------------------------------------------
@@ -107,94 +109,50 @@ module.exports = {
 
   /*
   |-----------------------------------------------------------------------------
-  | Code Clean-up                        https://maizzle.com/docs/code-cleanup/
+  | CSS Clean-up         https://maizzle.com/docs/code-cleanup/#removeunusedcss
   |-----------------------------------------------------------------------------
   |
-  | Options for cleaning up and optimizing your email's CSS and markup.
+  | Options in `removeUnusedCSS` are passed directly to `email-comb`, which
+  | can remove unused CSS and HTML comments, and even uglify class names.
+  |
+  | Enable this in any non-local environment config.
   |
   */
 
-  cleanup: {
-
-    /*
-    |-----------------------------------------------------------------------------
-    | PurgeCSS                    https://maizzle.com/docs/code-cleanup/#purgecss
-    |-----------------------------------------------------------------------------
-    |
-    | PurgeCSS will remove unused CSS selectors. This takes place *before*
-    | CSS inlining and `removeUnusedCSS`.
-    |
-    */
-
-    purgeCSS: {
-      content: [
-        'src/layouts/**/*.*',
-        'src/partials/**/*.*',
-        'src/components/**/*.*',
-      ],
-      whitelist: [],
-      whitelistPatterns: [],
-    },
-
-    /*
-    |-----------------------------------------------------------------------------
-    | CSS Clean-up         https://maizzle.com/docs/code-cleanup/#removeunusedcss
-    |-----------------------------------------------------------------------------
-    |
-    | Options in `removeUnusedCSS` are passed directly to `email-comb`, which
-    | can remove unused CSS and HTML comments, and even uglify class names.
-    |
-    | Enable this in any non-local environment config.
-    |
-    */
-
-    removeUnusedCSS: {
-      enabled: false,
-    },
-
-    /*
-    |-----------------------------------------------------------------------------
-    | Replace strings
-    | https://maizzle.com/docs/code-cleanup/#replacestrings
-    |-----------------------------------------------------------------------------
-    |
-    | Regular expressions [key] and the string to replace them with [value].
-    |
-    */
-
-    replaceStrings: false,
-
-    /*
-    |-----------------------------------------------------------------------------
-    | Keep Only Attribute Sizes
-    | https://maizzle.com/docs/code-cleanup/#keeponlyattributesizes
-    |-----------------------------------------------------------------------------
-    |
-    | Define for which elements Maizzle should only keep attribute sizes, like
-    | `width=""` and `height=""`. Elements in these arrays will have their
-    | inline CSS widths and heights removed.
-    |
-    | Example: width: ['TABLE', 'TD', 'TH', 'IMG', 'VIDEO'],
-    |
-    */
-
-    keepOnlyAttributeSizes: {
-      width: [],
-      height: [],
-    },
-
-    /*
-    |-----------------------------------------------------------------------------
-    | Prefer bgcolor Attribute
-    | https://maizzle.com/docs/code-cleanup/#preferbgcolorattribute
-    |-----------------------------------------------------------------------------
-    |
-    | When set to `true`, Maizzle will remove `background-color` inline CSS.
-    |
-    */
-
-    preferBgColorAttribute: false,
+  removeUnusedCSS: {
+    enabled: false,
   },
+
+  /*
+  |-----------------------------------------------------------------------------
+  | Keep Only Attribute Sizes
+  | https://maizzle.com/docs/code-cleanup/#keeponlyattributesizes
+  |-----------------------------------------------------------------------------
+  |
+  | Define for which elements Maizzle should only keep attribute sizes, like
+  | `width=""` and `height=""`. Elements in these arrays will have their
+  | inline CSS widths and heights removed.
+  |
+  | Example: width: ['TABLE', 'TD', 'TH', 'IMG', 'VIDEO'],
+  |
+  */
+
+  keepOnlyAttributeSizes: {
+    width: [],
+    height: [],
+  },
+
+  /*
+  |-----------------------------------------------------------------------------
+  | Prefer bgcolor Attribute
+  | https://maizzle.com/docs/code-cleanup/#preferbgcolorattribute
+  |-----------------------------------------------------------------------------
+  |
+  | When set to `true`, Maizzle will remove `background-color` inline CSS.
+  |
+  */
+
+  preferBgColorAttribute: false,
 
   /*
   |-----------------------------------------------------------------------------
@@ -253,83 +211,5 @@ module.exports = {
 
   minify: {
     enabled: false,
-  },
-
-  /*
-  |-----------------------------------------------------------------------------
-  | BrowserSync                           https://maizzle.com/docs/browsersync/
-  |-----------------------------------------------------------------------------
-  |
-  | Configure BrowserSync options.
-  |
-  */
-
-  browsersync: {
-    directory: true,
-    notify: false,
-    open: false,
-    port: 3000,
-    tunnel: false,
-    watch: [
-      'src/layouts/**/*.*',
-      'src/partials/**/*.*',
-      'src/components/**/*.*',
-    ],
-  },
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Markdown                          https://maizzle.com/docs/markdown/#config
-  |-----------------------------------------------------------------------------
-  |
-  | Configure options for Marked.js.
-  |
-  */
-
-  markdown: {
-    baseUrl: null,
-    breaks: false,
-    gfm: true,
-    headerIds: false,
-    headerPrefix: '',
-    highlight: null,
-    langPrefix: 'language-',
-    mangle: true,
-    pendantic: false,
-    sanitize: false,
-    sanitizer: null,
-    silent: false,
-    smartLists: false,
-    smartypants: false,
-    tables: true,
-    xhtml: false
-  },
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Build                                 https://maizzle.com/docs/build-paths/
-  |-----------------------------------------------------------------------------
-  |
-  | Configure build source and destination paths.
-  |
-  */
-
-  build: {
-    destination: {
-      path: 'build_local',
-      extension: 'html',
-    },
-    templates: {
-      source: 'src/templates',
-      filetypes: 'html|njk|nunjucks',
-    },
-    tailwind: {
-      css: 'src/assets/css/main.css',
-      config: 'tailwind.config.js',
-    },
-    assets: {
-      source: 'src/assets/images',
-      destination: 'images',
-    },
   },
 }

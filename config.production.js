@@ -9,13 +9,8 @@ module.exports = {
     enabled: true,
   },
 
-  cleanup: {
-    removeUnusedCSS: {
-      enabled: true,
-    },
-    replaceStrings: {
-      '\\s(style|class)(=""|(?=>)|(?=\\s))+': '',
-    },
+  removeUnusedCSS: {
+    enabled: true,
   },
 
   prettify: {
