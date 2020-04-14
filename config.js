@@ -104,6 +104,13 @@ module.exports = {
       width: [],
       height: [],
     },
+    keepOnlyAttributeSizes: {
+      width: [],
+      height: [],
+    },
+    preferBgColorAttribute: {
+      enabled: true
+    },
     excludedProperties: null,
   },
 
@@ -125,37 +132,6 @@ module.exports = {
 
   /*
   |-----------------------------------------------------------------------------
-  | Keep Only Attribute Sizes
-  | https://maizzle.com/docs/code-cleanup/#keeponlyattributesizes
-  |-----------------------------------------------------------------------------
-  |
-  | Define for which elements Maizzle should only keep attribute sizes, like
-  | `width=""` and `height=""`. Elements in these arrays will have their
-  | inline CSS widths and heights removed.
-  |
-  | Example: width: ['TABLE', 'TD', 'TH', 'IMG', 'VIDEO'],
-  |
-  */
-
-  keepOnlyAttributeSizes: {
-    width: [],
-    height: [],
-  },
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Prefer bgcolor Attribute
-  | https://maizzle.com/docs/code-cleanup/#preferbgcolorattribute
-  |-----------------------------------------------------------------------------
-  |
-  | When set to `true`, Maizzle will remove `background-color` inline CSS.
-  |
-  */
-
-  preferBgColorAttribute: false,
-
-  /*
-  |-----------------------------------------------------------------------------
   | Extra Attributes                 https://maizzle.com/docs/extra-attributes/
   |-----------------------------------------------------------------------------
   |
@@ -163,7 +139,7 @@ module.exports = {
   |
   */
 
-  applyExtraAttributes: {
+  extraAttributes: {
     table: {
       cellpadding: 0,
       cellspacing: 0,
