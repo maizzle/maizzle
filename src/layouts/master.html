@@ -29,11 +29,8 @@
     <div class="hidden">{{ page.preheader }}</div>
   </if>
 
-  <div role="article" aria-roledescription="email" aria-label="{{ page.title or '' }}" lang="{{ page.language or 'en'}}">
+  <div role="article" aria-roledescription="email" aria-label="{{ page.title || '' }}" lang="{{ page.language || 'en'}}">
     <block name="template"></block>
   </div>
 </body>
 </html>
-
-
-
