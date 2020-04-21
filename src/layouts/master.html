@@ -12,13 +12,12 @@
   <if condition="page.googleFonts">
     <link href="https://fonts.googleapis.com/css?family={{ page.googleFonts }}" rel="stylesheet" media="screen">
   </if>
-  <!--[if mso]>
+  <outlook>
     <xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
     <style>
-      table {border-collapse: collapse;}
       td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
     </style>
-  <![endif]-->
+  </outlook>
   <if condition="page.css">
     <style>{{{ page.css }}}</style>
   </if>
@@ -28,7 +27,6 @@
   <if condition="page.preheader">
     <div class="hidden">{{ page.preheader }}</div>
   </if>
-
   <div role="article" aria-roledescription="email" aria-label="{{ page.title || '' }}" lang="{{ page.language || 'en'}}">
     <block name="template"></block>
   </div>
