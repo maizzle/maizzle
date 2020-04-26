@@ -4,7 +4,7 @@
   <div>
 
   [![Version][npm-version-shield]][npm]
-  [![Build][travis-ci-shield]][travis-ci]
+  [![Build][github-ci-shield]][github-ci]
   [![Downloads][npm-stats-shield]][npm]
   [![License][license-shield]][license]
 
@@ -30,7 +30,7 @@ The Maizzle framework is open-sourced software licensed under the [MIT license](
 [npm]: https://www.npmjs.com/package/@maizzle/framework
 [npm-version-shield]: https://img.shields.io/npm/v/@maizzle/framework.svg?style=flat-square
 [npm-stats-shield]: https://img.shields.io/npm/dt/@maizzle/framework.svg?style=flat-square&color=6875f5
-[travis-ci]: https://travis-ci.org/maizzle/framework/
-[travis-ci-shield]: https://img.shields.io/travis/maizzle/framework/master.svg?style=flat-square
+[github-ci]: https://github.com/maizzle/framework/actions
+[github-ci-shield]: https://img.shields.io/github/workflow/status/maizzle/cli/Node.js%20CI?style=flat-square
 [license]: ./LICENSE
 [license-shield]: https://img.shields.io/npm/l/@maizzle/framework.svg?style=flat-square&color=0e9f6e
