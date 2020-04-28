@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "development": "maizzle build",
+    "local": "maizzle build",
     "production": "maizzle build production",
     "watch": "maizzle serve"
   },

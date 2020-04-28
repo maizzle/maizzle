@@ -1,8 +1,8 @@
-/node_modules/
-/build_local/
-.DS_Store
+node_modules
+build_local
+.vscode
+.idea
 Thumbs.db
-/.idea/
-/.vscode/
+.DS_Store
 npm-debug.log
 yarn-error.log
