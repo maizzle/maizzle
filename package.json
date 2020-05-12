@@ -6,7 +6,7 @@
     "watch": "maizzle serve"
   },
   "dependencies": {
-    "@maizzle/framework": "^1.0.7"
+    "@maizzle/framework": "^1.0.8"
   },
   "browserslist": [
     "> 1%"
