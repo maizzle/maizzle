@@ -13,7 +13,7 @@
     </style>
   </outlook>
   <if condition="page.title">
-    <title>{{ page.title }}</title>
+    <title>{{{ page.title }}}</title>
   </if>
   <if condition="page.googleFonts">
     <link href="https://fonts.googleapis.com/css?family={{ page.googleFonts }}" rel="stylesheet" media="screen">
@@ -27,7 +27,7 @@
   <if condition="page.preheader">
     <div class="hidden">{{ page.preheader }}</div>
   </if>
-  <div role="article" aria-roledescription="email" aria-label="{{ page.title || '' }}" lang="{{ page.language || 'en'}}">
+  <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en'}}">
     <block name="template"></block>
   </div>
 </body>
