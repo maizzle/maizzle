@@ -2,6 +2,7 @@ module.exports = {
   prefix: '',
   important: true,
   separator: ':',
+  target: 'ie11',
   theme: {
     screens: {
       sm: {'max': '600px'},
