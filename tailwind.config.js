@@ -293,9 +293,12 @@ module.exports = {
       auto: 'auto',
     },
     letterSpacing: {
-      'tight': '-1px',
-      'normal': '0',
-      'wide': '1px',
+      tighter: '-2px',
+      tight: '-1px',
+      normal: '0',
+      wide: '1px',
+      wider: '2px',
+      widest: '4px',
     },
     lineHeight: theme => ({
       ...theme('spacing'),
