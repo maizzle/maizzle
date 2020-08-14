@@ -793,10 +793,10 @@ module.exports = {
     transitionTimingFunction: ['responsive'],
     transitionDuration: ['responsive'],
     transitionDelay: ['responsive'],
-    animation: ['responsive'],
   },
   corePlugins: {
     accessibility: false,
+    animation: false,
   },
   plugins: [],
 }
