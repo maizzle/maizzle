@@ -239,6 +239,7 @@ module.exports = {
   corePlugins: {
     animation: false,
     backgroundOpacity: false,
+    borderOpacity: false,
     textOpacity: false,
   },
   plugins: [],
