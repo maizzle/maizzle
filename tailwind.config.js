@@ -238,6 +238,7 @@ module.exports = {
   variants: {},
   corePlugins: {
     animation: false,
+    backgroundOpacity: false,
     textOpacity: false,
   },
   plugins: [],
