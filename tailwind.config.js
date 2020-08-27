@@ -240,6 +240,8 @@ module.exports = {
     animation: false,
     backgroundOpacity: false,
     borderOpacity: false,
+    divideOpacity: false,
+    placeholderOpacity: false,
     textOpacity: false,
   },
   plugins: [],
