@@ -1,7 +1,9 @@
 module.exports = {
   theme: {
     screens: {
-      sm: {'max': '600px'},
+      sm: {
+        max: '600px'
+      },
     },
     extend: {
       colors: {
