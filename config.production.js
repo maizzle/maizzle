@@ -11,19 +11,18 @@
 
 module.exports = {
   build: {
-    destination: {
-      path: 'build_production',
+    templates: {
+      destination: {
+        path: 'build_production',
+      },
     },
   },
-
   inlineCSS: {
     enabled: true,
   },
-
   prettify: {
     enabled: true,
   },
-
   removeUnusedCSS: {
     enabled: true,
   },

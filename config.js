@@ -11,18 +11,18 @@
 
 module.exports = {
   build: {
-    assets: {
-      source: 'src/assets/images',
-      destination: 'images',
-    },
-    destination: {
-      path: 'build_local',
+    templates: {
+      source: 'src/templates',
+      destination: {
+        path: 'build_local',
+      },
+      assets: {
+        source: 'src/assets/images',
+        destination: 'images',
+      },
     },
     tailwind: {
       css: 'src/assets/css/main.css',
-    },
-    templates: {
-      root: 'src/templates',
     },
   },
 }
