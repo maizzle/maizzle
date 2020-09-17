@@ -210,6 +210,9 @@ module.exports = {
         '4xl': '36px',
         '5xl': '48px',
       },
+      inset: theme => ({
+        ...theme('spacing'),
+      }),
       letterSpacing: {
         tighter: '-2px',
         tight: '-1px',
