@@ -7,8 +7,5 @@
   },
   "dependencies": {
     "@maizzle/framework": "^2.6.2"
-  },
-  "browserslist": [
-    "> 1%"
-  ]
+  }
 }
