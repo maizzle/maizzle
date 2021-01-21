@@ -17,13 +17,6 @@ module.exports = {
       },
     },
   },
-  inlineCSS: {
-    enabled: true,
-  },
-  prettify: {
-    enabled: true,
-  },
-  removeUnusedCSS: {
-    enabled: true,
-  },
+  inlineCSS: true,
+  removeUnusedCSS: true,
 }
