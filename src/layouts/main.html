@@ -16,7 +16,8 @@
     <title>{{{ page.title }}}</title>
   </if>
   <if condition="page.googleFonts">
-    <link href="https://fonts.googleapis.com/css?family={{ page.googleFonts }}" rel="stylesheet" media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?{{{ page.googleFonts }}}&display=swap" rel="stylesheet" media="screen">
   </if>
   <if condition="page.css">
     <style>{{{ page.css }}}</style>
