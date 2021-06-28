@@ -17,12 +17,12 @@ module.exports = {
         path: 'build_local',
       },
       assets: {
-        source: 'src/assets/images',
+        source: 'src/images',
         destination: 'images',
       },
     },
     tailwind: {
-      css: 'src/assets/css/main.css',
+      css: 'src/css/tailwind.css',
     },
   },
 }
