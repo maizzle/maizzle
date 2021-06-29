@@ -2,10 +2,10 @@ module.exports = {
   mode: 'jit',
   theme: {
     screens: {
-      sm: {max: '600px'},
+      sm: '600px',
     },
     extend: {
-      spacing: {
+      spacing: (theme, { breakpoints }) => ({
         screen: '100vw',
         full: '100%',
         px: '1px',
@@ -65,7 +65,8 @@ module.exports = {
         '9/12': '75%',
         '10/12': '83.333333%',
         '11/12': '91.666667%',
-      },
+        ...breakpoints(theme('screens')),
+      }),
       borderRadius: {
         none: '0px',
         sm: '2px',
