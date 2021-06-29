@@ -67,6 +67,17 @@ module.exports = {
         '11/12': '91.666667%',
       },
       borderRadius: {
+        none: '0px',
+        sm: '2px',
+        DEFAULT: '4px',
+        md: '6px',
+        lg: '8px',
+        xl: '12px',
+        '2xl': '16px',
+        '3xl': '24px',
+        full: '9999px',
+      },
+      borderRadius: {
         sm: '2px',
         DEFAULT: '4px',
         lg: '8px',
