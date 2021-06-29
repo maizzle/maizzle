@@ -112,6 +112,17 @@ module.exports = {
       }),
       maxWidth: theme => ({
         ...theme('spacing'),
+        xs: '160px',
+        sm: '192px',
+        md: '224px',
+        lg: '256px',
+        xl: '288px',
+        '2xl': '336px',
+        '3xl': '384px',
+        '4xl': '448px',
+        '5xl': '512px',
+        '6xl': '576px',
+        '7xl': '640px',
       }),
       minHeight: theme => ({
         ...theme('spacing'),
