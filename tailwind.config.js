@@ -77,11 +77,6 @@ module.exports = {
         '3xl': '24px',
         full: '9999px',
       },
-      borderRadius: {
-        sm: '2px',
-        DEFAULT: '4px',
-        lg: '8px',
-      },
       fontFamily: {
         sans: ['ui-sans-serif', 'system-ui', '-apple-system', '"Segoe UI"', 'sans-serif'],
         serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
