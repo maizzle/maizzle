@@ -132,11 +132,20 @@ module.exports = {
     },
   },
   corePlugins: {
+    preflight: false,
     animation: false,
     backgroundOpacity: false,
     borderOpacity: false,
     divideOpacity: false,
     placeholderOpacity: false,
-    textOpacity: false,
+    ringColor: false,
+    ringWidth: false,
+    ringOpacity: false,
+    ringOffsetColor: false,
+    textOpacity: false
   },
+  plugins: [
+    require('tailwindcss-mso'),
+    require('tailwindcss-box-shadow'),
+  ],
 }

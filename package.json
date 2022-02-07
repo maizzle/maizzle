@@ -6,6 +6,8 @@
     "watch": "maizzle serve"
   },
   "dependencies": {
-    "@maizzle/framework": "^3.0.0"
+    "@maizzle/framework": "^3.0.0",
+    "tailwindcss-box-shadow": "^1.0.0",
+    "tailwindcss-mso": "^1.0.1"
   }
 }
