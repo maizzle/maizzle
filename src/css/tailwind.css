@@ -1,6 +1,3 @@
-/* Tailwind base styles */
-@import "tailwindcss/base";
-
 /* Your custom CSS resets for email */
 @import "resets";
 
