@@ -2,12 +2,15 @@
  * Here is where you can add your global email CSS resets.
  *
  * We use a custom, email-specific CSS reset, instead
- * of Tailwind's web-optimized base.
+ * of Tailwind's web-optimized `base` layer.
+ *
+ * Styles defined here will be inlined.
 */
 
 body {
   @apply m-0 p-0 w-full;
   word-break: break-word;
+  word-spacing: normal;
   -webkit-font-smoothing: antialiased;
 }
 
