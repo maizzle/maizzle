@@ -2,66 +2,88 @@
 title: "The Website Weekly Newsletter"
 preheader: "👀 Lorem, ipsum, and much dolor in this week's edition"
 image: https://images.unsplash.com/photo-1565932887479-b18108f07ffd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80
-bodyClass: bg-gray-100
+bodyClass: bg-slate-50
 ---
 
 <extends src="src/layouts/main.html">
   <block name="template">
     <table class="w-full font-sans">
       <tr>
-        <td align="center" class="bg-gray-100 sm:px-16">
-          <table class="w-600 sm:w-full">
+        <td align="center" class="bg-slate-50 sm:px-4">
+          <table class="w-150 sm:w-full">
             <tr>
-              <td class="p-48 sm:py-32 sm:px-24 text-center">
+              <td class="p-12 sm:py-8 sm:px-6 text-center">
                 <a href="https://maizzle.com">
-                  <img src="images/maizzle.png" width="75" alt="Maizzle">
+                  <img src="images/maizzle.png" width="75" alt="Maizzle" />
                 </a>
               </td>
             </tr>
             <tr>
-              <td class="bg-top bg-no-repeat bg-cover rounded text-left" style="background-image: url('{{ page.image }}');">
-                <component src="src/components/vmlbg.html" locals='{"width": 600, "height": 400, "src": "https://images.unsplash.com/photo-1565932887479-b18108f07ffd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"}'>
-                  <div class="leading-64 sm:h-32">&zwnj;</div>
+              <td
+                class="bg-top bg-no-repeat bg-cover rounded text-left"
+                style="background-image: url('{{ page.image }}');"
+              >
+                <component
+                  src="src/components/vmlbg.html"
+                  locals='{"width": 600, "height": 400, "src": "https://images.unsplash.com/photo-1565932887479-b18108f07ffd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"}'
+                >
+                  <div class="leading-16 sm:h-8">&zwnj;</div>
                   <table class="w-full">
                     <tr>
-                      <td class="w-48 sm:w-16"></td>
+                      <td class="w-12 sm:w-6"></td>
                       <td>
-                        <h1 class="m-0 mb-16 text-4xl text-white sm:leading-40">Lorem ipsum dolor</h1>
-                        <p class="m-0 text-white text-lg leading-24">Consectetur esse cupidatat in aliqua pariatur anim pariatur dolor nisi. Adipisicing elit labore nisi ullamco qui sint cillum commodo nisi velit sunt dolore.</p>
-                        <div class="leading-64 sm:h-32">&zwnj;</div>
+                        <h1 class="m-0 mb-4 text-4xl sm:text-3xl text-white sm:leading-10">Lorem ipsum dolor</h1>
+                        <p class="m-0 text-white text-lg leading-6">
+                          Consectetur esse cupidatat in aliqua pariatur anim pariatur dolor nisi. Adipisicing elit
+                          labore nisi ullamco qui sint cillum commodo nisi velit sunt dolore.
+                        </p>
+                        <div class="leading-16 sm:h-8">&zwnj;</div>
                         <div class="leading-full">
                           <a
                             href="https://example.com"
-                            class="inline-block py-16 px-24 rounded text-base font-semibold text-center no-underline text-white bg-indigo-800 hover:bg-indigo-700"
+                            class="inline-block py-4 px-6 rounded text-base font-semibold text-center no-underline text-white bg-indigo-800 hover:bg-indigo-700"
                           >
-                            <!--[if mso]><i style="letter-spacing: 24px; mso-font-width: -100%; mso-text-raise:30px;">&#8202;</i><![endif]-->
-                            <span style="mso-text-raise: 16px;">Read more &rarr;</span>
-                            <!--[if mso]><i style="letter-spacing: 24px; mso-font-width: -100%;">&#8202;</i><![endif]-->
+                            <outlook>
+                              <i class="tracking-6 -mso-font-width-full mso-text-raise-7.5">&#8202;</i>
+                            </outlook>
+                            <span class="mso-text-raise-4" style="mso-text-raise: 16px">Read more &rarr;</span>
+                            <outlook>
+                              <i class="tracking-6 -mso-font-width-full">&#8202;</i>
+                            </outlook>
                           </a>
                         </div>
                       </td>
-                      <td class="w-48 sm:w-16"></td>
+                      <td class="w-12 sm:w-6"></td>
                     </tr>
                   </table>
-                  <div class="leading-64 sm:h-32">&zwnj;</div>
+                  <div class="leading-16 sm:h-8">&zwnj;</div>
                 </component>
               </td>
             </tr>
             <tr>
-              <td class="h-32"></td>
+              <td class="h-8"></td>
             </tr>
             <tr>
-              <td class="w-full px-24 sm:px-0 text-left">
+              <td class="w-full px-6 sm:px-0 text-left">
                 <table class="w-full">
                   <tr>
-                    <td class="w-full pb-32 sm:w-full sm:inline-block">
+                    <td class="w-full pb-8 sm:w-full sm:inline-block">
                       <table class="w-full">
                         <tr>
-                          <td class="p-24 bg-white rounded">
-                            <p class="m-0 mb-4 text-sm text-gray-500">2 Feb, 2020</p>
-                            <h2 class="m-0 mb-24 text-2xl leading-24">Sit aliqua reprehenderit qui veniam culpa.</h2>
-                            <p class="m-0 mb-24 text-base text-gray-800">Ex consequat deserunt id cupidatat exercitation irure commodo. Dolor et est irure elit cupidatat laborum veniam amet eiusmod Lorem ex ea do aliqua. Ipsum Lorem nulla sit aliqua quis veniam magna...</p>
-                            <a href="https://example.com" class="text-base text-blue-500 hover:text-blue-400 no-underline">Read more &rarr;</a>
+                          <td class="p-6 bg-white rounded shadow-sm">
+                            <p class="m-0 mb-1 text-sm text-slate-500">2 Feb, 2020</p>
+                            <h2 class="m-0 mb-6 text-2xl leading-6">Sit aliqua reprehenderit qui veniam culpa.</h2>
+                            <p class="m-0 mb-6 text-base text-slate-700">
+                              Ex consequat deserunt id cupidatat exercitation irure commodo. Dolor et est irure elit
+                              cupidatat laborum veniam amet eiusmod Lorem ex ea do aliqua. Ipsum Lorem nulla sit aliqua
+                              quis veniam magna...
+                            </p>
+                            <a
+                              href="https://example.com"
+                              class="text-base text-blue-600 hover:text-blue-400 no-underline"
+                            >
+                              Read more &rarr;
+                            </a>
                           </td>
                         </tr>
                       </table>
@@ -71,29 +93,43 @@ bodyClass: bg-gray-100
               </td>
             </tr>
             <tr>
-              <td class="w-full px-24 sm:px-0 text-left">
+              <td class="w-full px-6 sm:px-0 text-left">
                 <table class="w-full">
                   <tr>
-                    <td class="w-1/2 pr-16 sm:px-0 sm:pb-32 sm:w-full sm:inline-block">
+                    <td class="w-1/2 pr-4 sm:px-0 sm:pb-8 sm:w-full sm:inline-block">
                       <table class="w-full">
                         <tr>
-                          <td class="p-24 bg-white rounded">
-                            <p class="m-0 mb-4 text-sm text-gray-500">3 Feb, 2020</p>
-                            <h2 class="m-0 mb-24 text-2xl leading-24">Do ullamco reprehenderit ut dolor.</h2>
-                            <p class="m-0 mb-24 text-base text-gray-800">Consectetur veniam ipsum ea sit est do voluptate laboris...</p>
-                            <a href="https://example.com" class="text-base text-blue-500 hover:text-blue-400 no-underline">Read more &rarr;</a>
+                          <td class="p-6 bg-white rounded shadow-sm">
+                            <p class="m-0 mb-1 text-sm text-slate-500">3 Feb, 2020</p>
+                            <h2 class="m-0 mb-6 text-2xl leading-6">Do ullamco reprehenderit ut dolor.</h2>
+                            <p class="m-0 mb-6 text-base text-slate-700">
+                              Consectetur veniam ipsum ea sit est do voluptate laboris...
+                            </p>
+                            <a
+                              href="https://example.com"
+                              class="text-base text-blue-600 hover:text-blue-400 no-underline"
+                            >
+                              Read more &rarr;
+                            </a>
                           </td>
                         </tr>
                       </table>
                     </td>
-                    <td class="w-1/2 pl-16 sm:px-0 sm:w-full sm:inline-block">
+                    <td class="w-1/2 pl-4 sm:px-0 sm:w-full sm:inline-block">
                       <table class="w-full">
                         <tr>
-                          <td class="p-24 bg-white rounded">
-                            <p class="m-0 mb-4 text-sm text-gray-500">4 Feb, 2020</p>
-                            <h2 class="m-0 mb-24 text-2xl leading-24">Sunt in do sunt officia nisi enim qui eiusmod.</h2>
-                            <p class="m-0 mb-24 text-base text-gray-800">Nulla officia mollit ipsum eiusmod excepteur ea...</p>
-                            <a href="https://example.com" class="text-base text-blue-500 hover:text-blue-400 no-underline">Read more &rarr;</a>
+                          <td class="p-6 bg-white rounded shadow-sm">
+                            <p class="m-0 mb-1 text-sm text-slate-500">4 Feb, 2020</p>
+                            <h2 class="m-0 mb-6 text-2xl leading-6">Sunt in do sunt officia nisi enim qui eiusmod.</h2>
+                            <p class="m-0 mb-6 text-base text-slate-700">
+                              Nulla officia mollit ipsum eiusmod excepteur ea...
+                            </p>
+                            <a
+                              href="https://example.com"
+                              class="text-base text-blue-600 hover:text-blue-400 no-underline"
+                            >
+                              Read more &rarr;
+                            </a>
                           </td>
                         </tr>
                       </table>
@@ -103,23 +139,30 @@ bodyClass: bg-gray-100
               </td>
             </tr>
             <tr>
-              <td class="h-64 sm:h-32"></td>
+              <td class="h-16 sm:h-8"></td>
             </tr>
             <tr>
-              <td class="px-48 sm:px-24 text-left">
-                <h3 class="m-0 text-base font-semibold text-gray-500 uppercase">From the archives</h3>
-                <div class="leading-24">&zwnj;</div>
+              <td class="px-12 sm:px-6 text-left">
+                <h3 class="m-0 text-base font-semibold text-slate-600 uppercase">From the archives</h3>
+                <div class="leading-6">&zwnj;</div>
                 <table class="w-full">
                   <tr>
                     <td>
-                      <h4 class="m-0 mb-4 text-xl font-semibold">
-                        <a href="https://example.com" class="text-blue-500 hover:text-blue-400 no-underline">Lorem velit tempor qui</a>
+                      <h4 class="m-0 mb-1 text-xl font-semibold">
+                        <a
+                          href="https://example.com"
+                          class="text-blue-600 hover:text-blue-400 no-underline"
+                        >
+                          Lorem velit tempor qui
+                        </a>
                       </h4>
-                      <p class="m-0 text-gray-500">Aliquip excepteur sint voluptate Lorem nisi deserunt consequat...</p>
+                      <p class="m-0 text-slate-500">
+                        Aliquip excepteur sint voluptate Lorem nisi deserunt consequat...
+                      </p>
                       <table class="w-full">
                         <tr>
-                          <td class="py-24">
-                            <div class="bg-gray-300 h-px leading-px">&zwnj;</div>
+                          <td class="py-6">
+                            <div class="bg-slate-300 h-px leading-px">&zwnj;</div>
                           </td>
                         </tr>
                       </table>
@@ -127,28 +170,36 @@ bodyClass: bg-gray-100
                   </tr>
                   <tr>
                     <td>
-                      <h4 class="m-0 mb-4 text-xl font-semibold">
-                        <a href="https://example.com" class="text-blue-500 hover:text-blue-400 no-underline">Lorem velit tempor qui</a>
+                      <h4 class="m-0 mb-1 text-xl font-semibold">
+                        <a
+                          href="https://example.com"
+                          class="text-blue-600 hover:text-blue-400 no-underline"
+                        >
+                          Lorem velit tempor qui
+                        </a>
                       </h4>
-                      <p class="m-0 text-gray-500">Aliquip excepteur sint voluptate Lorem nisi deserunt consequat...</p>
+                      <p class="m-0 text-slate-500">
+                        Aliquip excepteur sint voluptate Lorem nisi deserunt consequat...
+                      </p>
                     </td>
                   </tr>
                 </table>
               </td>
             </tr>
             <tr>
-              <td class="h-64 sm:h-32"></td>
+              <td class="h-16 sm:h-8"></td>
             </tr>
             <tr>
-              <td class="px-48 sm:px-24 py-16 bg-cool-gray-300 rounded text-left">
-                <p class="m-0 text-sm text-cool-gray-500">
-                  You are receiving this email because you signed up for Website Newsletter Weekly.
-                  You can <a href="https://example.com" class="text-blue-500 hover:text-blue-400 no-underline">unsubscribe</a> at any time.
+              <td class="px-12 sm:px-6 py-4 bg-white rounded text-left shadow-sm">
+                <p class="m-0 text-sm text-slate-500">
+                  You are receiving this email because you signed up for Website Newsletter Weekly. You can
+                  <a href="https://example.com" class="text-blue-600 hover:underline no-underline">unsubscribe</a>
+                  at any time.
                 </p>
               </td>
             </tr>
             <tr>
-              <td class="h-48 sm:h-32"></td>
+              <td class="h-12 sm:h-8"></td>
             </tr>
           </table>
         </td>
