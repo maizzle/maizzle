@@ -1,9 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "local": "maizzle build",
-    "production": "maizzle build production",
-    "watch": "maizzle serve"
+    "dev": "maizzle serve",
+    "production": "maizzle build production"
   },
   "dependencies": {
     "@maizzle/framework": "next",
