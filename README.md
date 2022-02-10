@@ -18,20 +18,19 @@ Maizzle is a framework that helps you quickly build HTML emails with [Tailwind C
 ## Getting Started
 
 ```sh
-# install the CLI globally
-npm i -g @maizzle/cli
+# Clone the Starter
+npx degit maizzle/maizzle my-project
 
-# create project wizard
-maizzle new
+# Install dependencies
+cd my-project
 
-# open it in your editor
-cd maizzle && code .
+npm install
 
-# start development
-maizzle serve
+# Start local development
+npm run dev
 
-# build for production
-maizzle build production
+# Build emails for production
+npm run build
 ```
 
 ## Documentation
