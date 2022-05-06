@@ -9,7 +9,7 @@
 */
 
 @layer utilities {
-  .break-words {
+  .break-word {
     word-break: break-word;
   }
 }
