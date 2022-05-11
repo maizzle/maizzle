@@ -28,7 +28,7 @@
   </if>
   <block name="head"></block>
 </head>
-<body class="m-0 p-0 w-full break-word antialiased {{ page.bodyClass || '' }}">
+<body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
   <if condition="page.preheader">
     <div class="hidden">
       {{{ page.preheader }}}
