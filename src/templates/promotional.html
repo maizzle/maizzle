@@ -21,13 +21,13 @@ bodyClass: bg-slate-50
             <tr>
               <td
                 class="bg-top bg-no-repeat bg-cover rounded text-left"
-                style="background-image: url('{{ page.image }}');"
+                style="background-image: url('{{{ page.image }}}');"
               >
                 <component
-                  src="src/components/v-image.html"
+                  src="src/components/v-fill.html"
                   width="600px"
                   height="400px"
-                  image="{{ page.image }}"
+                  image="{{{ page.image }}}"
                 >
                   <div class="leading-16 sm:h-8">&zwnj;</div>
                   <table class="w-full">
