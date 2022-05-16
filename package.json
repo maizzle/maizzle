@@ -5,9 +5,10 @@
     "build": "maizzle build production"
   },
   "dependencies": {
+    "@maizzle/cli": "latest",
     "@maizzle/framework": "next",
     "tailwindcss-box-shadow": "^1.0.0",
-    "tailwindcss-mso": "^1.2.0",
-    "tailwindcss-email-variants": "^1.0.0"
+    "tailwindcss-email-variants": "^1.0.0",
+    "tailwindcss-mso": "^1.2.0"
   }
 }
