@@ -1,11 +1,12 @@
 <div align="center">
-  <a href="https://maizzle.com">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./.github/logo-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="./.github/logo-light.svg">
-      <img alt="Maizzle" src="./.github/logo-dark.svg" width="200">
-    </picture>
-  </a>
+  <p>
+    <a href="https://maizzle.com/#gh-light-mode-only" target="_blank">
+      <img src="./.github/logo-light.svg" alt="Maizzle" width="200">
+    </a>
+    <a href="https://maizzle.com/#gh-dark-mode-only" target="_blank">
+      <img src="./.github/logo-dark.svg" alt="Maizzle" width="200">
+    </a>
+  </p>
   <p>The official Starter project for Maizzle</p>
 <div>
 
