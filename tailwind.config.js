@@ -8,7 +8,6 @@ module.exports = {
       spacing: {
         screen: '100vw',
         full: '100%',
-        px: '1px',
         0: '0',
         0.5: '2px',
         1: '4px',
@@ -154,17 +153,12 @@ module.exports = {
   },
   corePlugins: {
     preflight: false,
-    animation: false,
     backgroundOpacity: false,
     borderOpacity: false,
     boxShadow: false,
     divideOpacity: false,
     placeholderOpacity: false,
-    ringColor: false,
-    ringWidth: false,
-    ringOpacity: false,
-    ringOffsetColor: false,
-    textOpacity: false
+    textOpacity: false,
   },
   plugins: [
     require('tailwindcss-mso'),
