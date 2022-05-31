@@ -1,7 +1,13 @@
 <div align="center">
-  <p><a href="https://maizzle.com" target="_blank"><img src="https://res.cloudinary.com/maizzle/image/upload/v1553710263/maizzle.svg" width="200" alt="Maizzle"></a></p>
-  <p>HTML email development framework</p>
-  <div>
+  <a href="https://maizzle.com">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./.github/logo-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./.github/logo-light.svg">
+      <img alt="Maizzle" src="./.github/logo-dark.svg" width="200">
+    </picture>
+  </a>
+  <p>The official Starter project for Maizzle</p>
+<div>
 
   [![Version][npm-version-shield]][npm]
   [![Build][github-ci-shield]][github-ci]
@@ -11,14 +17,12 @@
   </div>
 </div>
 
-## About
-
-Maizzle is a framework that helps you quickly build HTML emails with [Tailwind CSS](https://tailwindcss.com/).
-
 ## Getting Started
 
-```sh
-# Clone the Starter
+Clone this repository and start creating emails with Maizzle.
+
+```bash
+# Clone this Starter
 npx degit maizzle/maizzle my-project
 
 # Install dependencies
