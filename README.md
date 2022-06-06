@@ -7,7 +7,7 @@
       <img src="./.github/logo-dark.svg" alt="Maizzle" width="200">
     </a>
   </p>
-  <p>The official Starter project for Maizzle</p>
+  <p>Quickly build HTML emails with utility-first CSS</p>
 <div>
 
   [![Version][npm-version-shield]][npm]
@@ -20,21 +20,29 @@
 
 ## Getting Started
 
-Clone this repository and start creating emails with Maizzle.
+Clone this starter:
 
 ```bash
-# Clone this Starter
 npx degit maizzle/maizzle my-project
+```
 
-# Install dependencies
+Install dependencies:
+
+```
 cd my-project
 
 npm install
+```
 
-# Start local development
+Start local development:
+
+```
 npm run dev
+```
 
-# Build emails for production
+Build emails for production:
+
+```
 npm run build
 ```
 
