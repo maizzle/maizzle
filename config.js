@@ -1,6 +1,6 @@
 /*
 |-------------------------------------------------------------------------------
-| Development config               https://maizzle.com/docs/environments/#local
+| Development config                      https://maizzle.com/docs/environments
 |-------------------------------------------------------------------------------
 |
 | The exported object contains the default Maizzle settings for development.

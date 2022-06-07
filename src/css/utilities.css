@@ -9,7 +9,7 @@
 */
 
 @layer utilities {
-  .mso-leading-exactly {
-    mso-line-height-rule: exactly;
+  .break-word {
+    word-break: break-word;
   }
 }

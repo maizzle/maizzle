@@ -1,7 +1,14 @@
 <div align="center">
-  <p><a href="https://maizzle.com" target="_blank"><img src="https://res.cloudinary.com/maizzle/image/upload/v1553710263/maizzle.svg" width="200" alt="Maizzle"></a></p>
-  <p>HTML email development framework</p>
-  <div>
+  <p>
+    <a href="https://maizzle.com/#gh-light-mode-only" target="_blank">
+      <img src="./.github/logo-light.svg" alt="Maizzle" width="200">
+    </a>
+    <a href="https://maizzle.com/#gh-dark-mode-only" target="_blank">
+      <img src="./.github/logo-dark.svg" alt="Maizzle" width="200">
+    </a>
+  </p>
+  <p>Quickly build HTML emails with utility-first CSS</p>
+<div>
 
   [![Version][npm-version-shield]][npm]
   [![Build][github-ci-shield]][github-ci]
@@ -11,27 +18,32 @@
   </div>
 </div>
 
-## About
-
-Maizzle is a framework that helps you quickly build HTML emails with [Tailwind CSS](https://tailwindcss.com/).
-
 ## Getting Started
 
-```sh
-# install the CLI globally
-npm i -g @maizzle/cli
+Clone this starter:
 
-# create project wizard
-maizzle new
+```bash
+npx degit maizzle/maizzle my-project
+```
 
-# open it in your editor
-cd maizzle && code .
+Install dependencies:
 
-# start development
-maizzle serve
+```
+cd my-project
 
-# build for production
-maizzle build production
+npm install
+```
+
+Start local development:
+
+```
+npm run dev
+```
+
+Build emails for production:
+
+```
+npm run build
 ```
 
 ## Documentation
