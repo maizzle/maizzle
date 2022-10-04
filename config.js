@@ -1,6 +1,6 @@
 /*
 |-------------------------------------------------------------------------------
-| Development config                      https://maizzle.com/docs/environments
+| Development config               https://maizzle.com/docs/environments/#local
 |-------------------------------------------------------------------------------
 |
 | The exported object contains the default Maizzle settings for development.
@@ -10,16 +10,29 @@
 */
 
 module.exports = {
-  build: {
-    templates: {
-      source: 'src/templates',
-      destination: {
-        path: 'build_local',
-      },
-      assets: {
-        source: 'src/images',
-        destination: 'images',
-      },
-    },
-  },
+	prettify: true,
+	prettify: {
+		indent_with_tabs: true,
+	  },
+	inlineCSS: true,
+	removeUnusedCSS: true,
+	removeUnusedCSS: {
+	  removeHTMLComments: false,
+	  },
+	extraAttributes: {
+		a: {
+			target: '_blank'
+		},
+		img: {
+			border: '0'
+		},
+		table: {
+			border: '0',
+			role: 'presentation',
+			cellpadding: '0',
+			cellspacing: '0'
+		},
+	},
 }
+  
+  
