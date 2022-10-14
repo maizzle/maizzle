@@ -22,9 +22,7 @@
   <if condition="page.title">
     <title>{{{ page.title }}}</title>
   </if>
-  <if condition="page.css">
-    <style>{{{ page.css }}}</style>
-  </if>
+  <style>{{{ page.css }}}</style>
   <block name="head"></block>
 </head>
 <body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
