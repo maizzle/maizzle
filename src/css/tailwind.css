@@ -12,3 +12,7 @@
 
 /* Your custom utility classes */
 @import "utilities";
+
+:root {
+  color-scheme: light dark;
+}
