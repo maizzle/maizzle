@@ -10,19 +10,19 @@
 */
 
 module.exports = {
-	path: '../Production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/',
+	path: '../production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/',
 	build: {
 		tailwind: {
-			css: '../Production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/src/css/tailwind.css',
-			config: '../Production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/tailwind.config.js',
+			css: '../production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/src/css/tailwind.css',
+			config: '../production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/tailwind.config.js',
 		},
 		templates: {
-			source: '../Production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/src/templates',
+			source: '../production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/src/templates',
 			destination: {
-				path: '../Production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/build_production',
+				path: '../production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/build_production',
 			},
 			assets: {
-				source: '../Production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/src/images',
+				source: '../production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/src/images',
 				destination: 'images',
 			},
 		},
