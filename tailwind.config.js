@@ -10,6 +10,7 @@ module.exports = {
 		'grey': '#444444',
 		'white': '#ffffff',
 		'black': '#000000',
+		'red': '#D6180B',
 	  },
 	  extend: {
 		spacing: {

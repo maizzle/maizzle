@@ -1,41 +1,47 @@
 <!DOCTYPE {{{ page.doctype || 'html' }}}>
-<html lang="{{ page.language || 'en' }}" xmlns:v="urn:schemas-microsoft-com:vml">
+<html lang="{{ page.language || 'fr' }}" xmlns:v="urn:schemas-microsoft-com:vml">
 <head>
-  <meta charset="{{ page.charset || 'utf-8' }}">
-  <meta name="x-apple-disable-message-reformatting">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-  <meta name="color-scheme" content="light dark">
-  <meta name="supported-color-schemes" content="light dark">
-  <!--[if mso]>
-  <noscript>
-    <xml>
-      <o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">
-        <o:PixelsPerInch>96</o:PixelsPerInch>
-      </o:OfficeDocumentSettings>
-    </xml>
-  </noscript>
-  <style>
-    td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
-  </style>
-  <![endif]-->
-  <if condition="page.title">
-    <title>{{{ page.title }}}</title>
-  </if>
-  <if condition="page.css">
-    <style>{{{ page.css }}}</style>
-  </if>
-  <block name="head"></block>
+	<meta charset="{{ page.charset || 'utf-8' }}">
+	<meta name="x-apple-disable-message-reformatting">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+	<meta name="color-scheme" content="light dark">
+	<meta name="supported-color-schemes" content="light dark">
+	<!--[if mso]>
+	<noscript>
+		<xml>
+			<o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">
+				<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+	</noscript>
+	<style>
+		td,th,div,p,a,h1,h2,h3,h4,h5,h6 {mso-line-height-rule: exactly;}
+	</style>
+	<![endif]-->
+	<if condition="page.title">
+	<title>{{{ page.title }}}</title>
+	</if>
+	<if condition="page.css">
+	<style>{{{ page.css }}}</style>
+	</if>
+	<block name="head"></block>
 </head>
-<body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
-  <if condition="page.preheader">
-    <div class="hidden">
-      {{{ page.preheader }}}
-      <each loop="item in Array.from(Array(150))">&#847; </each>
-    </div>
-  </if>
-  <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en' }}">
-    <block name="template"></block>
-  </div>
+<body class="m-0 p-0 w-full bg-[#ffffff]">
+	<div class="bg-[#ffffff]" role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'fr' }}">
+		<table class="w-full">
+			<tr>
+				<td align="center">
+					<table class="w-6000 sm:w-full m-0-auto">
+						<tr>
+							<td>
+								<block name="template"></block>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
 </body>
 </html>
