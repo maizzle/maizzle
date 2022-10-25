@@ -10,19 +10,19 @@
 */
 
 module.exports = {
-	path: '../production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/',
+	path: '../production/clients/harmonie_mutuelles/2022/202209_template_newsletter/',
 	build: {
 		tailwind: {
-			css: '../production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/src/css/tailwind.css',
-			config: '../production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/tailwind.config.js',
+			css: '../production/clients/harmonie_mutuelles/2022/202209_template_newsletter/src/css/tailwind.css',
+			config: '../production/clients/harmonie_mutuelles/2022/202209_template_newsletter/tailwind.config.js',
 		},
 		templates: {
-			source: '../production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/src/templates',
+			source: '../production/clients/harmonie_mutuelles/2022/202209_template_newsletter/src/templates',
 			destination: {
-				path: '../production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/build_production',
+				path: '../production/clients/harmonie_mutuelles/2022/202209_template_newsletter/build_production',
 			},
 			assets: {
-				source: '../production/clients/prismashop/2022/20220713_scenario_prm_multi_sources/src/images',
+				source: '../production/clients/harmonie_mutuelles/2022/202209_template_newsletter/src/images',
 				destination: 'images',
 			},
 		},

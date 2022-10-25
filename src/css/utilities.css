@@ -12,6 +12,49 @@
 	.mso-leading-exactly {
 	  mso-line-height-rule: exactly;
 	}
+	.m-auto {
+        margin: 0px auto;
+    }
+
+    .faux-absolute {
+        position: relative;
+        opacity: 0.999;
+        max-height: 0px;
+    }
+
+    .line {
+        text-decoration: underline;
+    }
+
+    .no-line {
+        text-decoration: none;
+    }
+
+    .ltr {
+        direction: ltr;
+    }
+
+    .rtl {
+        direction: rtl;
+    }
+	.show_mobile {
+		max-height:none !important;
+		font-size:1px !important;
+		display:block !important;
+		overflow:visible !important;
+		visibility:visible !important;
+		line-height:1px !important;
+		float:none !important;
+	}
+	.hide_desktop {
+		display:none;
+		mso-hide:all;
+		visibility:hidden;
+		max-height:0;
+		font-size:0;
+		line-height:0;
+		padding:0;
+		}
 	
   }
   /*
@@ -26,6 +69,15 @@ body {
 	word-break: break-word;
 	-webkit-font-smoothing: antialiased;
   }
+p, h1, h2, h3 {
+    @apply m-0 p-0 font-arial leading-s;
+    mso-line-height-rule: exactly;
+    line-height: 120%;
+}
+
+th {
+    font-weight: normal;
+}
  
   
   
