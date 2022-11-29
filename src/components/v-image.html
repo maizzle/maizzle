@@ -1,3 +1,10 @@
+<script props>
+  module.exports = {
+    width: props.width || '600px',
+    height: props.height || '400px',
+    image: props.image || 'https://via.placeholder.com/600x400'
+  }
+</script>
 <!--[if mso]>
 <v:image src="{{{ image }}}" xmlns:v="urn:schemas-microsoft-com:vml" style="width: {{ width }}; height: {{ height }};" />
 <v:rect fill="false" stroke="false" style="position: absolute; width: {{ width }}; height: {{ height }};">

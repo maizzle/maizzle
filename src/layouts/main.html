@@ -25,7 +25,7 @@
   <style>
     {{{ page.css }}}
   </style>
-  <block name="head"></block>
+  <stack name="head"></stack>
 </head>
 <body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
   <if condition="page.preheader">
@@ -35,7 +35,7 @@
     </div>
   </if>
   <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en' }}">
-    <block name="template"></block>
+    <slot:template></slot:template>
   </div>
 </body>
 </html>

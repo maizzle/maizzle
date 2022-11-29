@@ -4,8 +4,8 @@ preheader: "Please confirm your email address in order to activate your account"
 bodyClass: bg-slate-50
 ---
 
-<extends src="src/layouts/main.html">
-  <block name="template">
+<x-main>
+  <fill:template>
     <table class="w-full font-sans">
       <tr>
         <td align="center" class="bg-slate-50">
@@ -87,5 +87,5 @@ bodyClass: bg-slate-50
         </td>
       </tr>
     </table>
-  </block>
-</extends>
+  </fill:template>
+</x-main>

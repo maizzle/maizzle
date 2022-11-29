@@ -5,8 +5,8 @@ image: https://images.unsplash.com/photo-1565932887479-b18108f07ffd?ixlib=rb-1.2
 bodyClass: bg-slate-50
 ---
 
-<extends src="src/layouts/main.html">
-  <block name="template">
+<x-main>
+  <fill:template>
     <table class="w-full font-sans">
       <tr>
         <td align="center" class="bg-slate-50 sm:px-4">
@@ -23,10 +23,8 @@ bodyClass: bg-slate-50
                 class="bg-top bg-no-repeat bg-cover rounded text-left"
                 style="background-image: url('{{{ page.image }}}');"
               >
-                <component
-                  src="src/components/v-fill.html"
+                <x-v-fill
                   width="600px"
-                  height="400px"
                   image="{{{ page.image }}}"
                 >
                   <div class="leading-16 sm:h-8" role="separator">&zwnj;</div>
@@ -61,7 +59,7 @@ bodyClass: bg-slate-50
                     </tr>
                   </table>
                   <div class="leading-16 sm:h-8" role="separator">&zwnj;</div>
-                </component>
+                </x-v-fill>
               </td>
             </tr>
             <tr role="separator">
@@ -223,5 +221,5 @@ bodyClass: bg-slate-50
         </td>
       </tr>
     </table>
-  </block>
-</extends>
+  </fill:template>
+</x-main>
