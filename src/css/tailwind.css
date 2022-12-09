@@ -1,3 +1,6 @@
+/* Your custom CSS resets for email */
+@import "resets";
+
 /* Tailwind CSS components */
 @import "tailwindcss/components";
 
