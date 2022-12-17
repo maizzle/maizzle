@@ -60,9 +60,9 @@ The Maizzle framework is open-sourced software licensed under the [MIT license](
 
 [npm]: https://www.npmjs.com/package/@maizzle/framework
 [npm-stats]: https://npm-stat.com/charts.html?package=%40maizzle%2Fframework&from=2019-03-27
-[npm-version-shield]: https://img.shields.io/npm/v/@maizzle/framework.svg?style=flat-square
-[npm-stats-shield]: https://img.shields.io/npm/dt/@maizzle/framework.svg?style=flat-square&color=6875f5
+[npm-version-shield]: https://img.shields.io/npm/v/@maizzle/framework.svg
+[npm-stats-shield]: https://img.shields.io/npm/dt/@maizzle/framework.svg?color=6875f5
 [github-ci]: https://github.com/maizzle/framework/actions
-[github-ci-shield]: https://img.shields.io/github/workflow/status/maizzle/cli/Node.js%20CI?style=flat-square
+[github-ci-shield]: https://github.com/maizzle/framework/actions/workflows/nodejs.yml/badge.svg
 [license]: ./LICENSE
-[license-shield]: https://img.shields.io/npm/l/@maizzle/framework.svg?style=flat-square&color=0e9f6e
+[license-shield]: https://img.shields.io/npm/l/@maizzle/framework.svg?color=0e9f6e
