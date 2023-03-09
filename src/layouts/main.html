@@ -34,6 +34,12 @@
       <each loop="item in Array.from(Array(150))">&#847; </each>
     </div>
   </if>
+  <if condition="$slots.preheader?.filled">
+    <div class="hidden">
+      <slot:preheader></slot:preheader>
+      <each loop="item in Array.from(Array(150))">&#847; </each>
+    </div>
+  </if>
   <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en' }}">
     <slot:template></slot:template>
   </div>
