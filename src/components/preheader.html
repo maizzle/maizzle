@@ -1,0 +1,16 @@
+<script props>
+  // https://maizzle.com/docs/examples/preheader
+  module.exports = {
+    text: props.text,
+  }
+</script>
+
+<div class="hidden">
+  <if condition="text">
+    {{{ text }}}
+  </if>
+  <else>
+    <content></content>
+  </else>
+  <each loop="item in Array.from(Array(150))">&#847; </each>
+</div>
