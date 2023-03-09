@@ -1,0 +1,20 @@
+<script props>
+  module.exports = {
+    height: props.height,
+    msoHeight: props.msoHeight,
+  }
+</script>
+
+<if condition="height">
+  <div
+    attributes
+    role="separator"
+    style="
+      {{ height ? `line-height: ${height}` : '' }};
+      {{ msoHeight ? `mso-line-height-alt: ${msoHeight}` : '' }};
+    "
+  >&zwj;</div>
+</if>
+<else>
+  <div role="separator">&zwj;</div>
+</else>
