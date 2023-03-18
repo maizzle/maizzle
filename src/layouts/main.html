@@ -25,23 +25,17 @@
   <style>
     {{{ page.css }}}
   </style>
-  <stack name="head"></stack>
+  <stack name="head" />
 </head>
 <body class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] {{ page.bodyClass || '' }}">
   <if condition="page.preheader">
     <div class="hidden">
       {{{ page.preheader }}}
-      <each loop="item in Array.from(Array(150))">&#847; </each>
-    </div>
-  </if>
-  <if condition="$slots.preheader?.filled">
-    <div class="hidden">
-      <slot:preheader></slot:preheader>
-      <each loop="item in Array.from(Array(150))">&#847; </each>
+      <each loop="item in Array.from(Array(150))">&#8199;&#65279;&#847; </each>
     </div>
   </if>
   <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en' }}">
-    <slot:template></slot:template>
+    <slot:template />
   </div>
 </body>
 </html>
