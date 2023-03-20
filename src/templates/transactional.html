@@ -1,99 +1,77 @@
 ---
 title: "Confirm your email address"
-preheader: "Please confirm your email address in order to activate your account"
+preheader: "Please confirm your email address in order to activate your account."
 bodyClass: bg-slate-50
 ---
 
 <x-main>
   <fill:template>
-    <table class="w-full font-sans">
-      <tr>
-        <td align="center" class="bg-slate-50">
-          <table class="w-150 sm:w-full">
-            <tr>
-              <td class="p-12 sm:py-8 sm:px-6 text-center">
-                <a href="https://maizzle.com">
-                  <img src="images/maizzle.png" width="70" alt="Maizzle">
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td align="center" class="sm:px-6">
-                <table class="w-full">
-                  <tr>
-                    <td class="p-12 sm:px-6 bg-white text-slate-700 text-base text-left leading-6 rounded shadow-sm">
-                      <p>
-                        Hello,
-                      </p>
+    <div class="bg-slate-50 sm:px-4 font-sans">
+      <table align="center">
+        <tr>
+          <td class="w-[552px] max-w-full">
+            <div class="my-12 sm:my-8 text-center">
+              <a href="https://maizzle.com">
+                <img src="images/maizzle.png" width="70" alt="Maizzle">
+              </a>
+            </div>
 
-                      <p class="text-2xl sm:leading-8 text-black font-semibold m-0 mb-6">
-                        Is it you we're looking for?
-                      </p>
+            <table class="w-full">
+              <tr>
+                <td class="p-12 sm:px-6 text-base text-slate-700 bg-white rounded shadow-sm">
+                  <h1 class="m-0 mb-6 text-2xl sm:leading-8 text-black font-semibold">
+                    Hello,
+                  </h1>
 
-                      <p class="m-0 mb-6">
-                        Please confirm your email address by clicking the button below:
-                      </p>
+                  <p class="m-0 leading-6">
+                    Is it you we're looking for?
+                    <br>
+                    <br>
+                    Please confirm your email address by clicking the button below:
+                  </p>
 
-                      <div class="leading-full">
-                        <a
-                          href="https://example.com"
-                          class="inline-block py-3.5 px-4 rounded text-base font-semibold text-center [text-decoration:none] text-white bg-indigo-700 hover:bg-indigo-500"
-                        >
-                          <outlook>
-                            <i class="tracking-6 -mso-font-width-full mso-text-raise-7.5" hidden>&#8202;</i>
-                          </outlook>
-                          <span class="mso-text-raise-4">Confirm email address &rarr;</span>
-                          <outlook>
-                            <i class="tracking-6 -mso-font-width-full" hidden>&#8202;</i>
-                          </outlook>
-                        </a>
-                      </div>
+                  <x-spacer height="24px" />
 
-                      <table class="w-full" role="separator">
-                        <tr>
-                          <td class="py-8">
-                            <div class="bg-slate-200 h-px leading-px">&zwj;</div>
-                          </td>
-                        </tr>
-                      </table>
+                  <x-button href="https://maizzle.com">
+                    Confirm email address &rarr;
+                  </x-button>
 
-                      <p class="m-0 mb-4">
-                        If you didn't sign up for Maizzle, you can safely ignore this email.
-                      </p>
+                  <x-divider space-y="32px" class="bg-slate-200" />
 
-                      <p class="m-0 mb-4">
-                        Thanks, <br />The Maizzle Team
-                      </p>
-                    </td>
-                  </tr>
-                  <tr role="separator">
-                    <td class="leading-12">&zwj;</td>
-                  </tr>
-                  <tr>
-                    <td class="text-center text-slate-600 text-xs px-6">
-                      <p class="m-0 mb-4 uppercase">
-                        Powered by Maizzle
-                      </p>
+                  <p class="m-0">
+                    If you didn't sign up for Maizzle, you can safely ignore this email.
+                    <br>
+                    <br>
+                    Thanks, <br />The Maizzle Team
+                  </p>
+                </td>
+              </tr>
+              <tr role="separator">
+                <td class="leading-12">&zwj;</td>
+              </tr>
+              <tr>
+                <td class="text-center text-slate-600 text-xs px-6">
+                  <p class="m-0 mb-4 uppercase">
+                    Powered by Maizzle
+                  </p>
 
-                      <p class="m-0 italic">
-                        The framework for rapid email prototyping
-                      </p>
+                  <p class="m-0 italic">
+                    Quickly build HTML emails with utility-first CSS
+                  </p>
 
-                      <p class="cursor-default">
-                        <a href="https://maizzle.com/docs/" class="text-indigo-700 [text-decoration:none] hover:[text-decoration:underline]">Docs</a>
-                        &bull;
-                        <a href="https://github.com/maizzle" class="text-indigo-700 [text-decoration:none] hover:[text-decoration:underline]">Github</a>
-                        &bull;
-                        <a href="https://twitter.com/maizzlejs" class="text-indigo-700 [text-decoration:none] hover:[text-decoration:underline]">Twitter</a>
-                      </p>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
+                  <p class="cursor-default">
+                    <a href="https://maizzle.com/docs/" class="text-indigo-700 [text-decoration:none] hover:![text-decoration:underline]">Docs</a>
+                    &bull;
+                    <a href="https://github.com/maizzle" class="text-indigo-700 [text-decoration:none] hover:![text-decoration:underline]">Github</a>
+                    &bull;
+                    <a href="https://twitter.com/maizzlejs" class="text-indigo-700 [text-decoration:none] hover:![text-decoration:underline]">Twitter</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
   </fill:template>
 </x-main>
