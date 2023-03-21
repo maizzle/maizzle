@@ -1,0 +1,13 @@
+/*
+ * Here is where you can add your global email CSS resets.
+ *
+ * We use a custom, email-specific CSS reset, instead
+ * of Tailwind's web-optimized `base` layer.
+ *
+ * Styles defined here will be inlined.
+*/
+
+img {
+  @apply max-w-full leading-none align-middle;
+  border: 0;
+}
