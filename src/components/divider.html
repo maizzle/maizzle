@@ -14,16 +14,15 @@
 
 <div
   role="separator"
-  style="
-    height: {{ height }};
+  style="height: {{ height }};
     line-height: {{ height }};
-    {{ color ? `background-color: ${color};` : '' }};
+    {{ color && `background-color: ${color}` }};
     margin: 0;
-    {{ spaceY ? `margin-top: ${spaceY}; margin-bottom: ${spaceY};` : '' }}
-    {{ spaceX ? `margin-left: ${spaceX}; margin-right: ${spaceX};` : '' }}
-    {{ top ? `margin-top: ${top};` : '' }}
-    {{ bottom ? `margin-bottom: ${bottom};` : '' }}
-    {{ left ? `margin-left: ${left};` : '' }}
-    {{ right ? `margin-right: ${right};` : '' }}
+    {{ spaceY && `margin-top: ${spaceY}; margin-bottom: ${spaceY}` }};
+    {{ spaceX && `margin-left: ${spaceX}; margin-right: ${spaceX}` }};
+    {{ top && `margin-top: ${top}` }};
+    {{ bottom && `margin-bottom: ${bottom}` }};
+    {{ left && `margin-left: ${left}` }};
+    {{ right && `margin-right: ${right}` }};
   "
 >&zwj;</div>

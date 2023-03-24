@@ -10,9 +10,8 @@
   <div
     attributes
     role="separator"
-    style="
-      {{ height ? `line-height: ${height}` : '' }};
-      {{ msoHeight ? `mso-line-height-alt: ${msoHeight}` : '' }};
+    style="{{ height && `line-height: ${height}` }};
+      {{ msoHeight && `mso-line-height-alt: ${msoHeight}` }};
     "
   >&zwj;</div>
 </if>
