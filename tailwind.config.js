@@ -2,8 +2,8 @@
 module.exports = {
   theme: {
     screens: {
-      xs: {max: '425px'},
       sm: {max: '600px'},
+      xs: {max: '425px'},
     },
     extend: {
       spacing: {
