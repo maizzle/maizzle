@@ -9,12 +9,13 @@
     right: props.right, // right margin
     spaceY: props['space-y'] || '24px', // top and bottom margin
     spaceX: props['space-x'], // right and left margin
+    hasBgClass: props.class && props.class.split(' ').some(c => c.startsWith('bg-')),
   }
 </script>
 
 <div
   role="separator"
-  class="{{ !color && 'bg-slate-300' }}"
+  class="{{ (!color && !hasBgClass) && 'bg-slate-300' }}"
   style="height: {{ height }};
     line-height: {{ height }};
     {{ color && `background-color: ${color}` }};
