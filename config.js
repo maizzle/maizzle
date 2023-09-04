@@ -1,3 +1,5 @@
+/** @type {import('@maizzle/framework').Config} */
+
 /*
 |-------------------------------------------------------------------------------
 | Development config                      https://maizzle.com/docs/environments

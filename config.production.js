@@ -1,3 +1,5 @@
+/** @type {import('@maizzle/framework').Config} */
+
 /*
 |-------------------------------------------------------------------------------
 | Production config                       https://maizzle.com/docs/environments
@@ -10,6 +12,7 @@
 */
 
 module.exports = {
+
   build: {
     templates: {
       destination: {
