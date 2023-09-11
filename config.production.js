@@ -12,7 +12,6 @@
 */
 
 module.exports = {
-
   build: {
     templates: {
       destination: {
