@@ -9,5 +9,4 @@
 
 img {
   @apply max-w-full leading-none align-middle;
-  border: 0;
 }
