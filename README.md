@@ -7,7 +7,7 @@
       </picture>
     </a>
   </p>
-  <p>Quickly build HTML emails with utility-first CSS</p>
+  <p>Quickly build HTML emails with Tailwind CSS</p>
 <div>
 
   [![Version][npm-version-shield]][npm]
