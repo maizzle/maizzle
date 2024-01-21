@@ -7,9 +7,7 @@
     }[props.align],
     href: props.href,
     msoPt: props['mso-pt'] || '16px',
-    msoPr: props['mso-pr'] || '32px',
     msoPb: props['mso-pb'] || '30px',
-    msoPl: props['mso-pl'] || '32px',
   }
 </script>
 
@@ -20,19 +18,11 @@
     class="inline-block py-4 px-6 text-base leading-none font-semibold rounded text-slate-50 bg-indigo-700 [text-decoration:none]"
   >
     <outlook>
-      <i
-        class="mso-font-width-[-100%]"
-        style="letter-spacing: {{ msoPl }}; mso-text-raise: {{ msoPb }};"
-        hidden
-      >&nbsp;</i>
+      <i class="mso-font-width-[150%]" style="mso-text-raise: {{ msoPb }};" hidden>&emsp;</i>
     </outlook>
     <span style="mso-text-raise: {{ msoPt }}"><content /></span>
     <outlook>
-      <i
-        class="mso-font-width-[-100%]"
-        style="letter-spacing: {{ msoPr }};"
-        hidden
-      >&nbsp;</i>
+      <i class="mso-font-width-[150%]" hidden>&emsp;&#8203;</i>
     </outlook>
   </a>
 </div>
