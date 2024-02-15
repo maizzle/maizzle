@@ -20,30 +20,10 @@
 
 ## Getting Started
 
-Clone this starter:
+Run this command and follow the prompts:
 
 ```bash
-npx degit maizzle/maizzle my-project
-```
-
-Install dependencies:
-
-```
-cd my-project
-
-npm install
-```
-
-Start local development:
-
-```
-npm run dev
-```
-
-Build emails for production:
-
-```
-npm run build
+npx create-maizzle
 ```
 
 ## Documentation
