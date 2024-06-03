@@ -8,5 +8,5 @@
 */
 
 img {
-  @apply max-w-full leading-none align-middle;
+  @apply max-w-full align-middle;
 }
