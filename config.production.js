@@ -1,5 +1,3 @@
-/** @type {import('@maizzle/framework').Config} */
-
 /*
 |-------------------------------------------------------------------------------
 | Production config                       https://maizzle.com/docs/environments
@@ -11,6 +9,7 @@
 |
 */
 
+/** @type {import('@maizzle/framework').Config} */
 module.exports = {
   build: {
     templates: {

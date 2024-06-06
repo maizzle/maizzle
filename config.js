@@ -1,5 +1,3 @@
-/** @type {import('@maizzle/framework').Config} */
-
 /*
 |-------------------------------------------------------------------------------
 | Development config                      https://maizzle.com/docs/environments
@@ -11,8 +9,14 @@
 |
 */
 
+/** @type {import('@maizzle/framework').Config} */
 module.exports = {
   build: {
+    posthtml: {
+      options: {
+
+      }
+    },
     templates: {
       source: 'src/templates',
       destination: {

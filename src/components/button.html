@@ -1,4 +1,5 @@
 <script props>
+  // https://maizzle.com/docs/components/button
   module.exports = {
     align: {
       left: 'text-left',
@@ -8,6 +9,8 @@
     href: props.href,
     msoPt: props['mso-pt'] || '16px',
     msoPb: props['mso-pb'] || '30px',
+    color: props.color || '#f8fafc',
+    bgColor: props['bg-color'] || '#4338ca',
   }
 </script>
 
@@ -15,7 +18,8 @@
   <a
     attributes
     href="{{ href }}"
-    class="inline-block py-4 px-6 text-base leading-none font-semibold rounded text-slate-50 bg-indigo-700 [text-decoration:none]"
+    class="inline-block px-6 py-4 font-semibold no-underline rounded text-base/none"
+    style="{{ color && `color: ${color};` }} {{ bgColor && `background-color: ${bgColor};` }}"
   >
     <outlook>
       <i class="mso-font-width-[150%]" style="mso-text-raise: {{ msoPb }};" hidden>&emsp;</i>
