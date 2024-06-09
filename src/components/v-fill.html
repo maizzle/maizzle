@@ -1,13 +1,19 @@
 <script props>
   module.exports = {
     width: props.width || '600px',
+    type: props.type || 'frame',
+    stroke: props.stroke || 'f',
+    strokecolor: props.strokecolor || 'none',
+    fill: props.fill || 't',
+    fillcolor: props.fillcolor || 'none',
+    inset: props.inset || '0,0,0,0',
     image: props.image || 'https://via.placeholder.com/600x400'
   }
 </script>
 
 <!--[if mso]>
-<v:rect stroke="f" fillcolor="none" style="width: {{ width }}" xmlns:v="urn:schemas-microsoft-com:vml">
-<v:fill type="frame" src="{{{ image }}}" />
-<v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true"><div><![endif]-->
+<v:rect stroke="{{ stroke }}" strokecolor="{{ strokecolor }}" fill="{{ fill }}" fillcolor="{{ fillcolor }}" style="width: {{ width }}" xmlns:v="urn:schemas-microsoft-com:vml">
+<v:fill type="{{ type }}" src="{{{ image }}}" />
+<v:textbox inset="{{ inset }}" style="mso-fit-shape-to-text: true"><div><![endif]-->
 <content />
 <!--[if mso]></div></v:textbox></v:rect><![endif]-->
