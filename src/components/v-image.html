@@ -11,7 +11,7 @@
 
 <!--[if mso]>
 <v:image src="{{{ image }}}" style="width: {{ width }}; height: {{ height }};" xmlns:v="urn:schemas-microsoft-com:vml" />
-<v:rect fill="f" stroke="{{ stroke }}" strokecolor="{{ strokecolor }}" style="position: absolute; width: {{ width }}; height: {{ height }};" xmlns:v="urn:schemas-microsoft-com:vml">
+<v:rect fill="f" stroke="{{ strokecolor ? 't' : stroke }}"{{{ strokecolor ? ` strokecolor="${strokecolor}"` : '' }}} style="position: absolute; width: {{ width }}; height: {{ height }};" xmlns:v="urn:schemas-microsoft-com:vml">
 <v:textbox inset="{{ inset }}"><div><![endif]-->
 <content />
 <!--[if mso]></div></v:textbox></v:rect><![endif]-->
