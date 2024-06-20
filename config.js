@@ -12,11 +12,6 @@
 /** @type {import('@maizzle/framework').Config} */
 module.exports = {
   build: {
-    posthtml: {
-      options: {
-
-      }
-    },
     templates: {
       source: 'src/templates',
       destination: {
