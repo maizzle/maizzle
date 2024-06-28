@@ -1,69 +1,59 @@
 ---
-title: "Confirm your email address"
-preheader: "Please confirm your email address in order to activate your account."
 bodyClass: bg-slate-50
 ---
 
 <x-main>
-  <div class="bg-slate-50 sm:px-4 font-sans">
-    <table align="center">
+  <div class="bg-slate-50 sm:px-4 font-inter">
+    <table align="center" class="m-0 mx-auto">
       <tr>
         <td class="w-[552px] max-w-full">
-          <div class="my-12 sm:my-8 text-center">
-            <a href="https://maizzle.com">
-              <img src="images/maizzle.png" width="70" alt="Maizzle">
-            </a>
-          </div>
+          <x-spacer height="24px" />
 
           <table class="w-full">
             <tr>
-              <td class="p-12 sm:px-6 text-base text-slate-700 bg-white rounded shadow-sm">
-                <h1 class="m-0 mb-6 text-2xl sm:leading-8 text-black font-semibold">
-                  Hello,
-                </h1>
-
-                <p class="m-0 leading-6">
-                  Is it you we're looking for?
-                  <br>
-                  <br>
-                  Please confirm your email address by clicking the button below:
-                </p>
+              <td class="py-6 px-9 sm:p-6 bg-white [border:1px_solid_theme(colors.slate.200)] rounded-lg">
+                <a href="https://maizzle.com">
+                  <img src="/logo.png" width="70" alt="Maizzle">
+                </a>
 
                 <x-spacer height="24px" />
 
-                <x-button href="https://maizzle.com">
-                  Confirm email address &rarr;
+                <h1 class="m-0 mb-6 text-2xl/8 text-slate-900 font-semibold">
+                  Hello there!
+                </h1>
+
+                <p class="m-0 mb-6 text-base/6 text-slate-600">
+                  We're happy to have you on board! Please verify your email address in order to activate your account:
+                </p>
+
+                <x-button
+                  href="https://maizzle.com"
+                  class="m-0 mb-6 bg-slate-950 hover:bg-slate-800"
+                >
+                  Verify email
                 </x-button>
 
-                <x-divider space-y="32px" class="bg-slate-200" />
+                <p class="m-0 text-base/6 text-slate-600">
+                  Thanks,
+                  <br>
+                  <span class="font-semibold text-laravel-red">Maizzle</span>
+                </p>
 
-                <p class="m-0">
-                  If you didn't sign up for Maizzle, you can safely ignore this email.
-                  <br>
-                  <br>
-                  Thanks, <br />The Maizzle Team
+                <x-divider />
+
+                <p class="m-0 text-xs/5 text-slate-600 mso-break-all">
+                  If you're having trouble clicking the "Verify email" button, copy and paste the following URL into your web browser:
+                  <a href="https://maizzle.com/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0" class="text-slate-800 underline">https://maizzle.com/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0</a>
                 </p>
               </td>
             </tr>
-            <tr role="separator">
-              <td class="leading-12">&zwj;</td>
-            </tr>
+          </table>
+
+          <table class="w-full">
             <tr>
-              <td class="text-center text-slate-600 text-xs px-6">
-                <p class="m-0 mb-4 uppercase">
-                  Powered by Maizzle
-                </p>
-
-                <p class="m-0 italic">
-                  Quickly build HTML emails with Tailwind CSS
-                </p>
-
-                <p class="cursor-default">
-                  <a href="https://maizzle.com/docs/" class="text-indigo-700 [text-decoration:none] hover:![text-decoration:underline]">Docs</a>
-                  &bull;
-                  <a href="https://github.com/maizzle" class="text-indigo-700 [text-decoration:none] hover:![text-decoration:underline]">Github</a>
-                  &bull;
-                  <a href="https://twitter.com/maizzlejs" class="text-indigo-700 [text-decoration:none] hover:![text-decoration:underline]">Twitter</a>
+              <td class="py-6 px-9 sm:px-6">
+                <p class="m-0 text-xs text-slate-500">
+                  &copy; {{ new Date().getFullYear() }} Maizzle. All rights reserved.
                 </p>
               </td>
             </tr>

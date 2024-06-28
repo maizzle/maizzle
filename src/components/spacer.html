@@ -1,18 +1,25 @@
 <script props>
   // https://maizzle.com/docs/components/spacer
+  let styles = []
+
+  if (props.height) {
+    styles.push(`line-height: ${props.height};`)
+  }
+
+  if (props['mso-height']) {
+    styles.push(`mso-line-height-alt: ${props['mso-height']};`)
+  }
+
   module.exports = {
     height: props.height,
-    msoHeight: props['mso-height'],
+    styles: styles.join('')
   }
 </script>
 
 <if condition="height">
   <div
-    attributes
     role="separator"
-    style="{{ height && `line-height: ${height}` }};
-      {{ msoHeight && `mso-line-height-alt: ${msoHeight}` }};
-    "
+    style="{{ styles }}"
   >&zwj;</div>
 </if>
 <else>

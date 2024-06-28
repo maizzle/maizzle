@@ -1,6 +1,18 @@
+import emailPreset from 'tailwindcss-preset-email'
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   presets: [
-    require('tailwindcss-preset-email'),
+    emailPreset,
   ],
+  content: [
+    './src/**/*.html',
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', '"Segoe UI"', 'sans-serif'],
+      },
+    },
+  },
 }

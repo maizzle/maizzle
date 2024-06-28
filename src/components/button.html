@@ -1,16 +1,32 @@
 <script props>
   // https://maizzle.com/docs/components/button
-  module.exports = {
-    align: {
+  let align = ''
+
+  if (props.align) {
+    align = {
       left: 'text-left',
       center: 'text-center',
       right: 'text-right',
-    }[props.align],
+    }[props.align]
+  }
+
+  let styles = []
+  let hasBgClass = () => props.class && props.class.split(' ').some(c => c.startsWith('bg-'))
+
+  if (props.color) {
+    styles.push(`color: ${props.color};`)
+  }
+
+  if (props['bg-color'] && !hasBgClass()) {
+    styles.push(`background-color: ${props['bg-color']};`)
+  }
+
+  module.exports = {
+    align,
+    styles: styles.join(''),
     href: props.href,
     msoPt: props['mso-pt'] || '16px',
     msoPb: props['mso-pb'] || '30px',
-    color: props.color || '#f8fafc',
-    bgColor: props['bg-color'] || '#4338ca',
   }
 </script>
 
@@ -18,13 +34,13 @@
   <a
     attributes
     href="{{ href }}"
-    class="inline-block px-6 py-4 font-semibold no-underline rounded text-base/none"
-    style="{{ color && `color: ${color};` }} {{ bgColor && `background-color: ${bgColor};` }}"
+    style="{{ styles }}"
+    class="inline-block px-6 py-4 text-base/none text-[#fffffe] font-semibold no-underline rounded"
   >
     <outlook>
       <i class="mso-font-width-[150%]" style="mso-text-raise: {{ msoPb }};" hidden>&emsp;</i>
     </outlook>
-    <span style="mso-text-raise: {{ msoPt }}"><content /></span>
+    <span style="mso-text-raise: {{ msoPt }}"><yield /></span>
     <outlook>
       <i class="mso-font-width-[150%]" hidden>&emsp;&#8203;</i>
     </outlook>

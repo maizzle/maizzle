@@ -21,5 +21,5 @@
 <v:rect fill="{{ fillcolor ? 't' : fill }}" stroke="{{ strokecolor ? 't' : stroke }}" style="width: {{ width }}" xmlns:v="urn:schemas-microsoft-com:vml"{{{ strokecolor ? ` strokecolor="${strokecolor}"` : '' }}}{{{ fillcolor ? ` fillcolor="${fillcolor}"` : '' }}}>
 <v:fill type="{{ type }}" src="{{{ image }}}"{{{ sizes ? ` sizes="${sizes}"` : '' }}}{{{ aspect ? ` aspect="${aspect}"` : '' }}}{{{ origin ? ` origin="${origin}"` : '' }}}{{{ position ? ` position="${position}"` : '' }}}{{{ color ? ` color="${color}"` : '' }}} />
 <v:textbox inset="{{ inset }}" style="mso-fit-shape-to-text: true"><div><![endif]-->
-<content />
+<yield />
 <!--[if mso]></div></v:textbox></v:rect><![endif]-->

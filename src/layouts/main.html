@@ -17,13 +17,22 @@
   </noscript>
   <style>
     td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
+    .mso-break-all {word-break: break-all;}
   </style>
   <![endif]-->
   <if condition="page.title">
     <title>{{{ page.title }}}</title>
   </if>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="screen">
   <style>
-    {{{ page.css }}}
+    img {
+      @apply max-w-full align-middle;
+    }
+
+    @tailwind components;
+    @tailwind utilities;
   </style>
   <stack name="head" />
 </head>
@@ -35,7 +44,7 @@
     </div>
   </if>
   <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en' }}">
-    <content />
+    <yield />
   </div>
 </body>
 </html>
