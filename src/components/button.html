@@ -11,19 +11,26 @@
   }
 
   let styles = []
+  let classes = []
   let hasBgClass = () => props.class && props.class.split(' ').some(c => c.startsWith('bg-'))
 
   if (props.color) {
     styles.push(`color: ${props.color};`)
+  } else {
+    classes.push('text-white')
   }
 
   if (props['bg-color'] && !hasBgClass()) {
     styles.push(`background-color: ${props['bg-color']};`)
   }
+  if (!props['bg-color'] && !hasBgClass()) {
+    classes.push('bg-indigo-700')
+  }
 
   module.exports = {
     align,
     styles: styles.join(''),
+    classes: classes.join(' '),
     href: props.href,
     msoPt: props['mso-pt'] || '16px',
     msoPb: props['mso-pb'] || '30px',
@@ -35,7 +42,7 @@
     attributes
     href="{{ href }}"
     style="{{ styles }}"
-    class="inline-block px-6 py-4 text-base/none text-[#fffffe] font-semibold no-underline rounded"
+    class="inline-block py-4 px-6 text-base/none font-semibold no-underline rounded {{{ classes }}}"
   >
     <outlook>
       <i class="mso-font-width-[150%]" style="mso-text-raise: {{ msoPb }};" hidden>&emsp;</i>
