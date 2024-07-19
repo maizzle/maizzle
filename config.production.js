@@ -4,7 +4,6 @@ export default {
     output: {
       path: 'build_production',
     },
-    summary: true,
   },
   css: {
     inline: true,
