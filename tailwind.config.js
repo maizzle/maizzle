@@ -1,9 +1,7 @@
-import emailPreset from 'tailwindcss-preset-email'
-
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   presets: [
-    emailPreset,
+    require('tailwindcss-preset-email'),
   ],
   content: [
     './src/**/*.html',
