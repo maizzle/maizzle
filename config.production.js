@@ -4,7 +4,7 @@
 |-------------------------------------------------------------------------------
 |
 | This is the production configuration that Maizzle will use when you run the
-| `npm run build` command. These settings will be merged on top of the base
+| `npm run build` command. Settings here will be merged on top of the base
 | `config.js`, so you only need to add the options that are changing.
 |
 */
