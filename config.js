@@ -12,9 +12,9 @@
 /** @type {import('@maizzle/framework').Config} */
 export default {
   build: {
-    content: ['src/templates/**/*.html'],
+    content: ['emails/**/*.html'],
     static: {
-      source: ['src/images/**/*.*'],
+      source: ['images/**/*.*'],
       destination: 'images',
     },
   },
