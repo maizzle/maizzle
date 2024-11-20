@@ -10,7 +10,7 @@
    *
    * If a Tailwind background color class was passed, use it.
    * Otherwise, the `color` prop will take precedence if
-   * it was passed.
+   * as long as it was passed.
    */
   let hasBgClass = () => props.class && props.class.split(' ').some(c => c.startsWith('bg-'))
 
