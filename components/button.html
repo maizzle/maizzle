@@ -1,14 +1,10 @@
 <script props>
   // https://maizzle.com/docs/components/button
-  let align = ''
-
-  if (props.align) {
-    align = {
-      left: 'text-left',
-      center: 'text-center',
-      right: 'text-right',
-    }[props.align]
-  }
+  let align = {
+    left: 'text-left',
+    center: 'text-center',
+    right: 'text-right',
+  }[props.align] || ''
 
   let styles = [
     'display: inline-block;',
@@ -18,13 +14,8 @@
     'line-height: 1;',
     'border-radius: 4px;',
   ]
-  let hasBgClass = () => props.class && props.class.split(' ').some(c => c.startsWith('bg-'))
 
-  if (props.color) {
-    styles.push(`color: ${props.color};`)
-  } else {
-    styles.push('color: #fffffe;')
-  }
+  let hasBgClass = () => props.class && props.class.split(' ').some(c => c.startsWith('bg-'))
 
   if (props['bg-color'] && !hasBgClass()) {
     styles.push(`background-color: ${props['bg-color']};`)
@@ -32,10 +23,16 @@
     styles.push('background-color: #4338ca;')
   }
 
+  if (props.color) {
+    styles.push(`color: ${props.color};`)
+  } else {
+    styles.push('color: #fffffe;')
+  }
+
   module.exports = {
     align,
-    styles: styles.join(''),
     href: props.href,
+    styles: styles.join(''),
     msoPt: props['mso-pt'] || '16px',
     msoPb: props['mso-pb'] || '31px',
   }
@@ -44,7 +41,7 @@
 <div class="{{ align }}">
   <a
     attributes
-    href="{{ href }}"
+    href="{{{ href }}}"
     style="{{ styles }}"
   >
     <outlook trim>
