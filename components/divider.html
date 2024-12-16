@@ -1,0 +1,70 @@
+<script props>
+  // https://maizzle.com/docs/components/divider
+  let styles = [
+    `height: ${props.height || '1px'};`,
+    `line-height: ${props.height || '1px'};`,
+  ]
+
+  /**
+   * Color
+   *
+   * If a Tailwind background color class was passed, use it.
+   * Otherwise, the `color` prop will take precedence if
+   * as long as it was passed.
+   */
+  let hasBgClass = () => props.class && props.class.split(' ').some(c => c.startsWith('bg-'))
+
+  if (props.color) {
+    styles.push(`background-color: ${props.color};`)
+  }
+  if (!props.color && !hasBgClass()) {
+    styles.push(`background-color: #cbd5e1;`)
+  }
+
+  /**
+   * Margins
+   *
+   * If any margin prop was passed, add `margin: 0` first.
+   * It's important that this comes first, so inlining
+   * does not use it to override existing margins.
+   */
+  if (props.top || props.bottom || props.left || props.right || props['space-y'] || props['space-x']) {
+    styles.push('margin: 0;')
+  }
+
+  props['space-y'] = props['space-y'] === 0 ? '0px' : props['space-y'] || '24px'
+  if (props['space-y']) {
+    styles.push(`margin-top: ${props['space-y']}; margin-bottom: ${props['space-y']};`)
+  }
+
+  props['space-x'] = props['space-x'] === 0 ? '0px' : props['space-x']
+  if (props['space-x']) {
+    styles.push(`margin-left: ${props['space-x']}; margin-right: ${props['space-x']};`)
+  }
+
+  props.top = props.top === 0 ? '0px' : props.top
+  if (props.top) {
+    styles.push(`margin-top: ${props.top};`)
+  }
+
+  props.bottom = props.bottom === 0 ? '0px' : props.bottom
+  if (props.bottom) {
+    styles.push(`margin-bottom: ${props.bottom};`)
+  }
+
+  props.left = props.left === 0 ? '0px' : props.left
+  if (props.left) {
+    styles.push(`margin-left: ${props.left};`)
+  }
+
+  props.right = props.right === 0 ? '0px' : props.right
+  if (props.right) {
+    styles.push(`margin-right: ${props.right};`)
+  }
+
+  module.exports = {
+    styles: styles.join(''),
+  }
+</script>
+
+<div role="separator" style="{{ styles }}">&zwj;</div>

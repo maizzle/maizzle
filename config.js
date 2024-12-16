@@ -3,24 +3,19 @@
 | Development config                      https://maizzle.com/docs/environments
 |-------------------------------------------------------------------------------
 |
-| The exported object contains the default Maizzle settings for development.
-| This is used when you run `maizzle build` or `maizzle serve` and it has
-| the fastest build time, since most transformations are disabled.
+| This is the base configuration that Maizzle will use when you run commands
+| like `npm run build` or `npm run dev`. Additional config files will
+| inherit these settings, and can override them when necessary.
 |
 */
 
 /** @type {import('@maizzle/framework').Config} */
-module.exports = {
+export default {
   build: {
-    templates: {
-      source: 'src/templates',
-      destination: {
-        path: 'build_local',
-      },
-      assets: {
-        source: 'src/images',
-        destination: 'images',
-      },
+    content: ['emails/**/*.html'],
+    static: {
+      source: ['images/**/*.*'],
+      destination: 'images',
     },
   },
 }
