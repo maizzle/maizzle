@@ -20,7 +20,7 @@
 
 ## Getting Started
 
-Run this command and follow the prompts, choosing the `5.0.0-beta` Starter:
+Run this command and follow the prompts:
 
 ```bash
 npx create-maizzle
