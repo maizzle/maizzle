@@ -8,11 +8,4 @@ module.exports = {
     './emails/**/*.html',
     './layouts/**/*.html',
   ],
-  theme: {
-    extend: {
-      fontFamily: {
-        inter: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', '"Segoe UI"', 'sans-serif'],
-      },
-    },
-  },
 }
