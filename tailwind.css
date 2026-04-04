@@ -1,5 +1,1 @@
 @import "@maizzle/tailwindcss";
-
-img {
-  @apply max-w-full align-middle;
-}
