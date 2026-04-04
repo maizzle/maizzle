@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
   defineConfig({
     title: 'Welcome to Maizzle',
   })
