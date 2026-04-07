@@ -9,14 +9,14 @@
     <div class="font-inter">
       <table align="center" class="m-0 mx-auto">
         <tr>
-          <td class="w-[552px] max-w-full">
+          <td class="w-138 max-w-full">
             <Spacer size="24px" />
 
             <table class="w-full">
               <tr>
                 <td class="py-6 px-9 sm:p-6 bg-white dark:bg-gray-800 dark:border-gray-500 [border:1px_solid_var(--color-slate-200)] rounded-lg">
                   <a href="https://maizzle.com">
-                    <img src="/images/logo.png" width="70" alt="Maizzle">
+                    <img src="/logo.png" width="70" alt="Maizzle">
                   </a>
 
                   <Spacer size="24px" />
