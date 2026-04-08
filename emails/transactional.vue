@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  defineConfig({
+  useSeoMeta({
     title: 'Welcome to Maizzle',
   })
 </script>
