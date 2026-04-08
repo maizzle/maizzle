@@ -7,6 +7,6 @@
   },
   "dependencies": {
     "@maizzle/framework": "next",
-    "@maizzle/tailwindcss": "^1.2.0"
+    "@maizzle/tailwindcss": "latest"
   }
 }
