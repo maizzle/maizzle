@@ -1,12 +1,7 @@
 <script setup lang="ts">
+  defineOptions({ inheritAttrs: false })
+
   defineProps({
-    /**
-     * Classes to add to the `<html>` tag.
-     */
-    htmlClass: {
-      type: String,
-      default: ''
-    },
     /**
      * Classes to add to the `<body>` tag.
      */
@@ -18,7 +13,7 @@
 </script>
 
 <template>
-  <html lang="en" dir="ltr" :class="htmlClass" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
       <meta charset="utf-8">
       <meta name="x-apple-disable-message-reformatting">
@@ -44,13 +39,14 @@
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="screen">
       <style>
         @import "@maizzle/tailwindcss";
+        @import "@maizzle/tailwindcss/prose";
 
         img {
           @apply max-w-full align-middle;
         }
       </style>
     </head>
-    <body xml:lang="en" :class="['m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased]', bodyClass]">
+    <body xml:lang="en" :class="['m-0 p-0 size-full [word-break:break-word] [-webkit-font-smoothing:antialiased]', bodyClass, $attrs.class]">
       <slot />
     </body>
   </html>
