@@ -1,71 +1,67 @@
-<script setup lang="ts">
+<script setup>
   useSeoMeta({
     title: 'Welcome to Maizzle',
   })
 </script>
 
 <template>
-  <Layout body-class="dark:bg-gray-950">
-    <div class="font-inter">
-      <table align="center" class="m-0 mx-auto">
-        <tr>
-          <td class="w-138 max-w-full">
-            <Spacer size="24px" />
+  <Layout class="font-inter sm:px-6 dark:bg-gray-950">
+    <Container width="552px">
+      <Spacer height="24px" />
 
-            <table class="w-full">
-              <tr>
-                <td class="py-6 px-9 sm:p-6 bg-white dark:bg-gray-800 dark:border-gray-500 [border:1px_solid_var(--color-slate-200)] rounded-lg">
-                  <a href="https://maizzle.com">
-                    <img src="/logo.png" width="70" alt="Maizzle">
-                  </a>
+      <Section
+        class="py-6 px-9 sm:p-6 bg-white dark:bg-gray-900 [border:1px_solid_var(--color-slate-200)] dark:border-gray-700 rounded-lg"
+        mso-style="padding: 24px 36px; border: 1px solid #e2e8f0;"
+      >
+        <Link href="https://maizzle.com">
+          <Image
+            src="/logo.png"
+            dark-src="/logo-gradient.png"
+            width="70"
+            alt="Maizzle"
+          />
+        </Link>
 
-                  <Spacer size="24px" />
+        <Spacer height="24px" />
 
-                  <h1 class="m-0 mb-6 text-2xl/8 text-slate-900 dark:text-gray-300 font-semibold">
-                    Hello there!
-                  </h1>
+        <Heading level="1" class="mb-6 text-3xl font-semibold text-slate-900 dark:text-gray-300">
+          Hello there!
+        </Heading>
 
-                  <p class="m-0 mb-6 text-base/6 text-slate-600 dark:text-gray-300">
-                    We're happy to have you on board! Please verify your email address in order to activate your account:
-                  </p>
+        <Text class="mb-6 text-slate-600 dark:text-gray-300">
+          We're happy to have you on board! Please verify your email address in order to activate your account:
+        </Text>
 
-                  <Button
-                    href="https://maizzle.com"
-                    class="bg-indigo-500 hover:bg-slate-800"
-                  >
-                    Verify email
-                  </Button>
+        <Button
+          href="https://maizzle.com"
+          class="hover:bg-indigo-600"
+        >
+          Verify email
+        </Button>
 
-                  <Spacer size="24px" />
+        <Spacer height="24px" />
 
-                  <p class="m-0 text-base/6 text-slate-600 dark:text-gray-300">
-                    Thanks,
-                    <br>
-                    <span class="font-semibold">Maizzle</span>
-                  </p>
+        <Text class="m-0 text-slate-600 dark:text-gray-300">
+          Thanks,
+          <br>
+          <Text as="span" class="font-semibold">Maizzle</Text>
+        </Text>
 
-                  <Divider class="dark:bg-gray-500" />
+        <Divider class="dark:bg-gray-500" />
 
-                  <p class="m-0 text-xs/5 text-slate-600 mso-break-all dark:text-gray-400">
-                    If you're having trouble clicking the "Verify email" button, copy and paste the following URL into your web browser:
-                    <a href="https://maizzle.com/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0" class="text-slate-800 dark:text-gray-400 underline">https://maizzle.com/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0</a>
-                  </p>
-                </td>
-              </tr>
-            </table>
+        <Text class="m-0 text-xs mso-break-all text-slate-600 dark:text-gray-400">
+          If you're having trouble clicking the "Verify email" button, copy and paste the following URL into your web browser:
+          <Link href="https://maizzle.com/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0" class="underline text-slate-800 dark:text-gray-400">
+            https://maizzle.com/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0
+          </Link>
+        </Text>
+      </Section>
 
-            <table class="w-full">
-              <tr>
-                <td class="py-6 px-9 sm:px-6">
-                  <p class="m-0 text-xs text-slate-500">
-                    &copy; {{ new Date().getFullYear() }} Maizzle. All rights reserved.
-                  </p>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </div>
+      <Section class="py-6 px-9 sm:px-6" mso-style="padding: 24px 36px;">
+        <Text class="m-0 text-xs text-slate-500">
+          &copy; {{ new Date().getFullYear() }} Maizzle. All rights reserved.
+        </Text>
+      </Section>
+    </Container>
   </Layout>
 </template>
