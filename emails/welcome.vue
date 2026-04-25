@@ -1,9 +1,3 @@
-<script setup>
-  useSeoMeta({
-    title: 'Welcome to Maizzle',
-  })
-</script>
-
 <template>
   <Layout class="p-6 dark:bg-gray-950">
     <Container width="576px">
