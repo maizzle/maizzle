@@ -3,7 +3,8 @@
   "type": "module",
   "scripts": {
     "dev": "maizzle serve",
-    "build": "maizzle build"
+    "build": "maizzle build",
+    "postinstall": "maizzle prepare"
   },
   "dependencies": {
     "@maizzle/framework": "next",
