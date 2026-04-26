@@ -1,6 +1,6 @@
 <template>
   <Layout class="p-6 dark:bg-gray-950">
-    <Container width="576px">
+    <Container class="max-w-xl">
       <Section
         class="py-6 px-9 sm:px-6 bg-white dark:bg-gray-900 [border:1px_solid_var(--color-slate-200)] dark:border-gray-700 rounded-lg"
         mso-style="padding: 24px 36px; border: 1px solid #e2e8f0;"
