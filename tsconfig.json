@@ -11,5 +11,5 @@
     "skipLibCheck": true
   },
   "include": ["**/*.vue", ".maizzle/*.d.ts"],
-  "exclude": ["node_modules", "build_production"]
+  "exclude": ["node_modules", "dist"]
 }
