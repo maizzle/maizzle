@@ -7,7 +7,6 @@
     "postinstall": "maizzle prepare"
   },
   "dependencies": {
-    "@maizzle/framework": "next",
-    "@maizzle/tailwindcss": "latest"
+    "@maizzle/framework": "next"
   }
 }
