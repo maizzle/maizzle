@@ -39,7 +39,7 @@
           <Text as="span" class="font-semibold">Maizzle</Text>
         </Text>
 
-        <Divider class="dark:bg-gray-500" />
+        <Hr class="dark:bg-gray-500" />
 
         <Text class="m-0 text-xs mso-break-all text-slate-600 dark:text-gray-400">
           If you're having trouble clicking the "Verify email" button, copy and paste the following URL into your web browser:
