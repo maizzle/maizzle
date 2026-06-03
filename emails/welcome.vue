@@ -59,7 +59,7 @@
 
         <Spacer class="h-9" />
 
-        <Text class="m-0 text-xs leading-4.5 text-gray-400">
+        <Text class="m-0 text-xs/4.5 text-gray-400">
           &copy; {{ new Date().getFullYear() }} [Brand Name]. All rights reserved.
         </Text>
       </Section>

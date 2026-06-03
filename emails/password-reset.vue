@@ -22,11 +22,11 @@
 
         <Spacer class="h-36" />
 
-        <Heading class="mb-4 text-[32px]/10 font-bold text-white">
+        <Heading class="text-[32px]/10 font-bold text-white">
           Reset your password
         </Heading>
 
-        <Text class="m-0 text-lg text-gray-300">
+        <Text class="m-0 mt-4 text-lg text-gray-300">
           Secure access to your account in one tap.
         </Text>
       </Section>
@@ -69,7 +69,7 @@
 
         <Spacer class="h-9" />
 
-        <Text class="m-0 text-xs leading-4.5 text-gray-400">
+        <Text class="m-0 text-xs/4.5 text-gray-400">
           &copy; {{ new Date().getFullYear() }} [Brand Name]. All rights reserved.
         </Text>
       </Section>
