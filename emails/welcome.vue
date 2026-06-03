@@ -1,57 +1,66 @@
 <template>
-  <Layout class="p-6 dark:bg-gray-950">
-    <Container class="max-w-xl">
-      <Section
-        class="py-6 px-9 sm:px-6 bg-white dark:bg-gray-900 [border:1px_solid_var(--color-slate-200)] dark:border-gray-700 rounded-lg"
-        mso-style="padding: 24px 36px;"
-      >
-        <Link href="https://maizzle.com">
-          <Img
-            src="/logo.png"
-            dark-src="/logo-gradient.png"
-            width="70"
-            alt="Maizzle"
-          />
-        </Link>
+  <Layout class="bg-gray-50">
+    <Preheader>Confirm your email to activate your account.</Preheader>
 
-        <Spacer height="24px" />
+    <Container class="max-w-xl p-0 py-10 sm:p-6">
+      <Section class="rounded-t-lg bg-gray-900 px-6 pt-6 pb-11">
+        <Row>
+          <Column class="w-1/2">
+            <Link href="https://maizzle.com">
+              <Img src="/logo.png" width="60" alt="Maizzle" />
+            </Link>
+          </Column>
+          <Column class="w-1/2 text-right">
+            <Link
+              href="https://maizzle.com"
+              class="text-sm font-medium text-gray-400"
+            >
+              My Account
+            </Link>
+          </Column>
+        </Row>
 
-        <Heading level="1" class="mb-6 text-3xl font-semibold text-slate-900 dark:text-gray-300">
-          Hello there!
+        <Spacer class="h-36" />
+
+        <Heading class="mb-4 text-[32px]/10 font-bold text-white">
+          Welcome to [Brand Name]
         </Heading>
 
-        <Text class="mb-6 text-slate-600 dark:text-gray-300">
-          We're happy to have you on board! Please verify your email address in order to activate your account:
+        <Text class="m-0 text-lg text-gray-300">
+          Your account is almost ready.
+        </Text>
+      </Section>
+
+      <Section class="rounded-b-lg bg-white px-6 py-16">
+        <Heading level="2" class="mb-6 text-2xl font-bold text-gray-950">
+          Confirm your account
+        </Heading>
+
+        <Text class="mb-6 text-base text-gray-600">
+          Thanks for signing up for [Brand Name]. Please confirm your email address to activate your account and start using all features.
         </Text>
 
         <Button
           href="https://maizzle.com"
-          class="hover:bg-indigo-600"
+          class="mb-6 rounded-lg bg-slate-900 px-7 py-3 text-sm font-bold text-white"
         >
-          Verify email
+          Log in now
         </Button>
 
-        <Spacer height="24px" />
-
-        <Text class="m-0 text-slate-600 dark:text-gray-300">
-          Thanks,
+        <Text class="m-0 text-sm leading-5 text-gray-600">
+          <Text as="span" class="text-sm font-semibold leading-5">This link will expire in 24 hours.</Text>
           <br>
-          <Text as="span" class="font-semibold">Maizzle</Text>
-        </Text>
-
-        <Hr class="dark:bg-gray-500" />
-
-        <Text class="m-0 text-xs mso-break-all text-slate-600 dark:text-gray-400">
-          If you're having trouble clicking the "Verify email" button, copy and paste the following URL into your web browser:
-          <Link href="https://maizzle.com/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0" class="underline text-slate-800 dark:text-gray-400">
-            https://maizzle.com/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0
-          </Link>
+          If you did not create an account, you can safely ignore this email.
         </Text>
       </Section>
 
-      <Section class="py-6 px-9 sm:px-6" mso-style="padding: 24px 36px;">
-        <Text class="m-0 text-xs text-slate-500">
-          &copy; {{ new Date().getFullYear() }} Maizzle. All rights reserved.
+      <Section class="px-6 py-11">
+        <Img src="/logo-footer.png" width="106" alt="Maizzle" />
+
+        <Spacer class="h-9" />
+
+        <Text class="m-0 text-xs leading-4.5 text-gray-400">
+          &copy; {{ new Date().getFullYear() }} [Brand Name]. All rights reserved.
         </Text>
       </Section>
     </Container>
