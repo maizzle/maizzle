@@ -7,6 +7,6 @@
     "postinstall": "maizzle prepare"
   },
   "dependencies": {
-    "@maizzle/framework": "next"
+    "@maizzle/framework": "latest"
   }
 }
