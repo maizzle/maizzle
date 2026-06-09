@@ -3,10 +3,10 @@
   "type": "module",
   "scripts": {
     "dev": "maizzle serve",
-    "build": "maizzle build production"
+    "build": "maizzle build",
+    "postinstall": "maizzle prepare"
   },
   "dependencies": {
-    "@maizzle/framework": "latest",
-    "tailwindcss-preset-email": "latest"
+    "@maizzle/framework": "latest"
   }
 }
