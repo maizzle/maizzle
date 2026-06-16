@@ -7,7 +7,7 @@
       </picture>
     </a>
   </p>
-  <p>Quickly build HTML emails with Tailwind CSS</p>
+  <p>The modern email development framework</p>
 <div>
 
   [![Version][npm-version-shield]][npm]
